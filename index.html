@@ -4,14 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="System Standardów Opieki dla Żłobków - Rozporządzenie MRPiPS z dnia 13 grudnia 2024 r.">
+  <meta name="theme-color" content="#667eea">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
   <title>System Standardów Opieki dla Żłobków</title>
 
-  <!-- Google Fonts - Material Design -->
+  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-  <!-- FontAwesome -->
+  <!-- Google Fonts - Material Design (Roboto) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6.5.1 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <!-- Custom Styles -->
@@ -21,215 +28,375 @@
   <!-- App Container -->
   <div class="app-container">
 
-    <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar elevation-4" id="sidebar" role="navigation" aria-label="Menu główne">
       <div class="sidebar-header">
-        <h1 class="sidebar-title">
+        <div class="sidebar-logo">
           <i class="fas fa-baby-carriage"></i>
+        </div>
+        <h1 class="sidebar-title">
           System Standardów
         </h1>
         <p class="sidebar-subtitle">Kompleksowy system wdrażania standardów opieki dla żłobków</p>
-        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Przełącz menu">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Przełącz menu" aria-expanded="true">
           <i class="fas fa-bars"></i>
         </button>
       </div>
 
+      <!-- Progress Indicator -->
       <div class="progress-section">
+        <p class="progress-label">
+          <i class="fas fa-chart-pie"></i>
+          Postęp wdrożenia
+        </p>
         <div class="progress-circle-container">
-          <svg class="progress-circle" width="140" height="140" viewBox="0 0 140 140">
+          <svg class="progress-circle" width="140" height="140" viewBox="0 0 140 140" aria-hidden="true">
             <circle class="progress-circle-bg" cx="70" cy="70" r="60" />
             <circle class="progress-circle-fill" cx="70" cy="70" r="60" id="progressCircle" />
           </svg>
-          <div class="progress-text" id="progressPercent">0%</div>
+          <div class="progress-text" id="progressPercent" aria-live="polite">0%</div>
         </div>
       </div>
 
+      <!-- Statistics -->
       <div class="stats-card">
+        <h2 class="stats-title">
+          <i class="fas fa-list-check"></i>
+          Statystyki
+        </h2>
         <div class="stat-item">
           <span class="stat-label">
             <i class="fas fa-clipboard-check"></i>
             Przed rejestracją
           </span>
-          <span class="stat-value" id="statBeforeReg">0/21</span>
+          <span class="stat-value" id="statBeforeReg" aria-live="polite">0/21</span>
         </div>
         <div class="stat-item">
           <span class="stat-label">
             <i class="fas fa-running"></i>
             Podczas prowadzenia
           </span>
-          <span class="stat-value" id="statDuring">0/86</span>
+          <span class="stat-value" id="statDuring" aria-live="polite">0/86</span>
         </div>
         <div class="stat-item">
           <span class="stat-label">
             <i class="fas fa-star"></i>
             Fakultatywne
           </span>
-          <span class="stat-value" id="statOptional">0/42</span>
+          <span class="stat-value" id="statOptional" aria-live="polite">0/42</span>
         </div>
         <div class="stat-item stat-total">
           <span class="stat-label">
             <i class="fas fa-tasks"></i>
             Łącznie
           </span>
-          <span class="stat-value" id="statTotal">0/149</span>
+          <span class="stat-value" id="statTotal" aria-live="polite">0/149</span>
         </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="sidebar-actions">
+        <button class="sidebar-action-btn" onclick="saveData()" aria-label="Szybki zapis danych" title="Szybki zapis">
+          <i class="fas fa-save"></i>
+          <span>Szybki zapis</span>
+        </button>
       </div>
     </aside>
 
-    <!-- Main Content -->
-    <main class="main-content">
+    <!-- Main Content Area -->
+    <main class="main-content" role="main">
       <div class="content-wrapper">
 
-        <!-- Header -->
-        <header class="page-header">
-          <h2 class="page-title">
-            <i class="fas fa-school"></i>
-            System Standardów Opieki dla Żłobków
-          </h2>
-          <p class="page-subtitle">
-            Rozporządzenie MRPiPS z dnia 13 grudnia 2024 r. - Obowiązuje od 1 stycznia 2026 r.
-          </p>
+        <!-- Page Header with Breadcrumbs -->
+        <header class="page-header elevation-2">
+          <div class="breadcrumbs" aria-label="Breadcrumb">
+            <span class="breadcrumb-item">
+              <i class="fas fa-home"></i>
+              <span>Start</span>
+            </span>
+            <i class="fas fa-chevron-right breadcrumb-separator"></i>
+            <span class="breadcrumb-item active" id="currentBreadcrumb">Dane Żłobka</span>
+          </div>
+
+          <div class="page-header-content">
+            <h2 class="page-title">
+              <i class="fas fa-school"></i>
+              System Standardów Opieki dla Żłobków
+            </h2>
+            <p class="page-subtitle">
+              <i class="fas fa-gavel"></i>
+              Rozporządzenie MRPiPS z dnia 13 grudnia 2024 r. - Obowiązuje od 1 stycznia 2026 r.
+            </p>
+          </div>
+
+          <!-- Header Actions -->
+          <div class="header-actions">
+            <button class="icon-btn" onclick="saveData()" aria-label="Zapisz dane" title="Zapisz dane">
+              <i class="fas fa-save"></i>
+            </button>
+            <button class="icon-btn" onclick="exportJSON()" aria-label="Eksportuj do JSON" title="Eksportuj JSON">
+              <i class="fas fa-download"></i>
+            </button>
+          </div>
         </header>
 
         <!-- Tabs Navigation -->
-        <nav class="tabs-nav" role="tablist">
-          <button class="tab-btn active" data-tab="dane" role="tab" aria-selected="true">
+        <nav class="tabs-nav elevation-1" role="tablist" aria-label="Sekcje systemu">
+          <button class="tab-btn active" data-tab="dane" data-label="Dane Żłobka" role="tab" aria-selected="true" aria-controls="tab-dane">
             <i class="fas fa-building"></i>
-            <span>Dane Żłobka</span>
+            <span class="tab-text">Dane Żłobka</span>
           </button>
-          <button class="tab-btn" data-tab="przed" role="tab" aria-selected="false">
+          <button class="tab-btn" data-tab="przed" data-label="Przed Rejestracją" role="tab" aria-selected="false" aria-controls="tab-przed">
             <i class="fas fa-clipboard-list"></i>
-            <span>Przed Rejestracją</span>
-            <span class="tab-badge">21</span>
+            <span class="tab-text">Przed Rejestracją</span>
+            <span class="chip chip-warning">21</span>
           </button>
-          <button class="tab-btn" data-tab="podczas" role="tab" aria-selected="false">
+          <button class="tab-btn" data-tab="podczas" data-label="Podczas Prowadzenia" role="tab" aria-selected="false" aria-controls="tab-podczas">
             <i class="fas fa-tasks"></i>
-            <span>Podczas Prowadzenia</span>
-            <span class="tab-badge">86</span>
+            <span class="tab-text">Podczas Prowadzenia</span>
+            <span class="chip chip-info">86</span>
           </button>
-          <button class="tab-btn" data-tab="fakultatywne" role="tab" aria-selected="false">
+          <button class="tab-btn" data-tab="fakultatywne" data-label="Fakultatywne" role="tab" aria-selected="false" aria-controls="tab-fakultatywne">
             <i class="fas fa-star"></i>
-            <span>Fakultatywne</span>
-            <span class="tab-badge">42</span>
+            <span class="tab-text">Fakultatywne</span>
+            <span class="chip chip-success">42</span>
           </button>
-          <button class="tab-btn" data-tab="postep" role="tab" aria-selected="false">
+          <button class="tab-btn" data-tab="postep" data-label="Postęp Wdrożenia" role="tab" aria-selected="false" aria-controls="tab-postep">
             <i class="fas fa-chart-line"></i>
-            <span>Postęp Wdrożenia</span>
+            <span class="tab-text">Postęp Wdrożenia</span>
           </button>
-          <button class="tab-btn" data-tab="eksport" role="tab" aria-selected="false">
+          <button class="tab-btn" data-tab="eksport" data-label="Eksport i Sprawozdanie" role="tab" aria-selected="false" aria-controls="tab-eksport">
             <i class="fas fa-download"></i>
-            <span>Eksport i Sprawozdanie</span>
+            <span class="tab-text">Eksport i Sprawozdanie</span>
           </button>
         </nav>
 
         <!-- Tab Content: Dane Żłobka -->
-        <div id="tab-dane" class="tab-content active" role="tabpanel">
-          <div class="card">
-            <h3 class="card-title">
-              <i class="fas fa-info-circle"></i>
-              Dane Instytucji
-            </h3>
+        <div id="tab-dane" class="tab-content active" role="tabpanel" aria-labelledby="tab-dane">
+          <div class="card elevation-2">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-info-circle"></i>
+                Dane Instytucji
+              </h3>
+              <p class="card-description">
+                <i class="fas fa-lightbulb"></i>
+                Wprowadź podstawowe informacje identyfikacyjne Twojej placówki
+              </p>
+            </div>
 
             <div class="alert alert-info">
               <i class="fas fa-info-circle"></i>
-              <span>Wypełnij podstawowe informacje o swojej instytucji. Dane zostaną automatycznie zapisane.</span>
+              <div class="alert-content">
+                <strong>Informacja:</strong>
+                <span>Wypełnij podstawowe informacje o swojej instytucji. Dane zostaną automatycznie zapisane.</span>
+              </div>
             </div>
 
-            <form class="form" id="facilityForm">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="facilityName">
-                    <i class="fas fa-building"></i>
-                    Nazwa instytucji *
-                  </label>
-                  <input type="text" id="facilityName" class="form-control" placeholder="np. Żłobek 'Słoneczko'" required>
+            <form class="form" id="facilityForm" novalidate>
+              <div class="form-section">
+                <h4 class="form-section-title">
+                  <i class="fas fa-building"></i>
+                  Podstawowe dane
+                </h4>
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="facilityName" class="form-label">
+                      <i class="fas fa-building"></i>
+                      Nazwa instytucji
+                      <span class="required-indicator" aria-label="Pole wymagane">*</span>
+                    </label>
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        id="facilityName"
+                        class="form-control"
+                        placeholder="np. Żłobek 'Słoneczko'"
+                        required
+                        aria-required="true"
+                        aria-describedby="facilityName-help">
+                      <i class="input-icon fas fa-building"></i>
+                    </div>
+                    <small id="facilityName-help" class="form-help">Oficjalna nazwa Twojej instytucji</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="facilityType" class="form-label">
+                      <i class="fas fa-list"></i>
+                      Typ instytucji
+                      <span class="required-indicator" aria-label="Pole wymagane">*</span>
+                    </label>
+                    <div class="select-wrapper">
+                      <select id="facilityType" class="form-control" required aria-required="true">
+                        <option value="">-- Wybierz --</option>
+                        <option value="żłobek">Żłobek</option>
+                        <option value="klub">Klub dziecięcy</option>
+                        <option value="opiekun">Dzienny opiekun</option>
+                      </select>
+                      <i class="select-icon fas fa-chevron-down"></i>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="facilityType">
-                    <i class="fas fa-list"></i>
-                    Typ instytucji *
+                  <label for="facilityAddress" class="form-label">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Adres
                   </label>
-                  <select id="facilityType" class="form-control" required>
-                    <option value="">-- Wybierz --</option>
-                    <option value="żłobek">Żłobek</option>
-                    <option value="klub">Klub dziecięcy</option>
-                    <option value="opiekun">Dzienny opiekun</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="facilityAddress">
-                  <i class="fas fa-map-marker-alt"></i>
-                  Adres
-                </label>
-                <input type="text" id="facilityAddress" class="form-control" placeholder="ul. Przykładowa 123, 00-001 Warszawa">
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="facilityPhone">
-                    <i class="fas fa-phone"></i>
-                    Telefon
-                  </label>
-                  <input type="tel" id="facilityPhone" class="form-control" placeholder="+48 123 456 789">
-                </div>
-
-                <div class="form-group">
-                  <label for="facilityEmail">
-                    <i class="fas fa-envelope"></i>
-                    Email
-                  </label>
-                  <input type="email" id="facilityEmail" class="form-control" placeholder="kontakt@zlobek.pl">
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="facilityManager">
-                    <i class="fas fa-user-tie"></i>
-                    Osoba odpowiedzialna / Dyrektor
-                  </label>
-                  <input type="text" id="facilityManager" class="form-control" placeholder="Jan Kowalski">
-                </div>
-
-                <div class="form-group">
-                  <label for="startDate">
-                    <i class="fas fa-calendar-alt"></i>
-                    Data rozpoczęcia wdrażania standardów
-                  </label>
-                  <input type="date" id="startDate" class="form-control">
+                  <div class="input-wrapper">
+                    <input
+                      type="text"
+                      id="facilityAddress"
+                      class="form-control"
+                      placeholder="ul. Przykładowa 123, 00-001 Warszawa"
+                      aria-describedby="facilityAddress-help">
+                    <i class="input-icon fas fa-map-marker-alt"></i>
+                  </div>
+                  <small id="facilityAddress-help" class="form-help">Pełny adres siedziby instytucji</small>
                 </div>
               </div>
 
-              <div class="form-group">
-                <label for="facilityNotes">
-                  <i class="fas fa-sticky-note"></i>
-                  Dodatkowe uwagi
-                </label>
-                <textarea id="facilityNotes" class="form-control" rows="4" placeholder="Dodatkowe informacje o instytucji..."></textarea>
+              <div class="form-section">
+                <h4 class="form-section-title">
+                  <i class="fas fa-address-book"></i>
+                  Dane kontaktowe
+                </h4>
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="facilityPhone" class="form-label">
+                      <i class="fas fa-phone"></i>
+                      Telefon
+                    </label>
+                    <div class="input-wrapper">
+                      <input
+                        type="tel"
+                        id="facilityPhone"
+                        class="form-control"
+                        placeholder="+48 123 456 789"
+                        aria-describedby="facilityPhone-help">
+                      <i class="input-icon fas fa-phone"></i>
+                    </div>
+                    <small id="facilityPhone-help" class="form-help">Numer telefonu kontaktowego</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="facilityEmail" class="form-label">
+                      <i class="fas fa-envelope"></i>
+                      Email
+                    </label>
+                    <div class="input-wrapper">
+                      <input
+                        type="email"
+                        id="facilityEmail"
+                        class="form-control"
+                        placeholder="kontakt@zlobek.pl"
+                        aria-describedby="facilityEmail-help">
+                      <i class="input-icon fas fa-envelope"></i>
+                    </div>
+                    <small id="facilityEmail-help" class="form-help">Adres email do korespondencji</small>
+                  </div>
+                </div>
               </div>
 
-              <button type="button" class="btn btn-primary" onclick="saveData()">
-                <i class="fas fa-save"></i>
-                Zapisz dane
-              </button>
+              <div class="form-section">
+                <h4 class="form-section-title">
+                  <i class="fas fa-user-cog"></i>
+                  Zarządzanie i wdrożenie
+                </h4>
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="facilityManager" class="form-label">
+                      <i class="fas fa-user-tie"></i>
+                      Osoba odpowiedzialna / Dyrektor
+                    </label>
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        id="facilityManager"
+                        class="form-control"
+                        placeholder="Jan Kowalski"
+                        aria-describedby="facilityManager-help">
+                      <i class="input-icon fas fa-user-tie"></i>
+                    </div>
+                    <small id="facilityManager-help" class="form-help">Osoba odpowiedzialna za wdrożenie standardów</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="startDate" class="form-label">
+                      <i class="fas fa-calendar-alt"></i>
+                      Data rozpoczęcia wdrażania standardów
+                    </label>
+                    <div class="input-wrapper">
+                      <input
+                        type="date"
+                        id="startDate"
+                        class="form-control"
+                        aria-describedby="startDate-help">
+                      <i class="input-icon fas fa-calendar-alt"></i>
+                    </div>
+                    <small id="startDate-help" class="form-help">Data rozpoczęcia procesu wdrażania</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <h4 class="form-section-title">
+                  <i class="fas fa-comment-dots"></i>
+                  Dodatkowe informacje
+                </h4>
+
+                <div class="form-group">
+                  <label for="facilityNotes" class="form-label">
+                    <i class="fas fa-sticky-note"></i>
+                    Dodatkowe uwagi
+                  </label>
+                  <textarea
+                    id="facilityNotes"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Dodatkowe informacje o instytucji..."
+                    aria-describedby="facilityNotes-help"></textarea>
+                  <small id="facilityNotes-help" class="form-help">Miejsce na dowolne dodatkowe informacje</small>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn-primary elevation-2" onclick="saveData()">
+                  <i class="fas fa-save"></i>
+                  <span>Zapisz dane</span>
+                </button>
+                <button type="reset" class="btn btn-secondary">
+                  <i class="fas fa-redo"></i>
+                  <span>Resetuj formularz</span>
+                </button>
+              </div>
             </form>
           </div>
         </div>
 
         <!-- Tab Content: Przed Rejestracją -->
-        <div id="tab-przed" class="tab-content" role="tabpanel">
-          <div class="card">
-            <h3 class="card-title">
-              <i class="fas fa-clipboard-list"></i>
-              Standardy Przed Rejestracją
-            </h3>
+        <div id="tab-przed" class="tab-content" role="tabpanel" aria-labelledby="tab-przed">
+          <div class="card elevation-2">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-clipboard-list"></i>
+                Standardy Przed Rejestracją
+              </h3>
+              <p class="card-description">
+                <i class="fas fa-exclamation-circle"></i>
+                21 standardów wymaganych przed uzyskaniem wpisu do rejestru
+              </p>
+            </div>
 
             <div class="alert alert-warning">
               <i class="fas fa-exclamation-triangle"></i>
-              <span>Te standardy muszą być spełnione PRZED uzyskaniem wpisu do rejestru żłobków i klubów dziecięcych.</span>
+              <div class="alert-content">
+                <strong>Uwaga:</strong>
+                <span>Te standardy muszą być spełnione PRZED uzyskaniem wpisu do rejestru żłobków i klubów dziecięcych.</span>
+              </div>
             </div>
 
             <div id="standardsBeforeRegister"></div>
@@ -237,16 +404,25 @@
         </div>
 
         <!-- Tab Content: Podczas Prowadzenia -->
-        <div id="tab-podczas" class="tab-content" role="tabpanel">
-          <div class="card">
-            <h3 class="card-title">
-              <i class="fas fa-running"></i>
-              Standardy Podczas Prowadzenia
-            </h3>
+        <div id="tab-podczas" class="tab-content" role="tabpanel" aria-labelledby="tab-podczas">
+          <div class="card elevation-2">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-running"></i>
+                Standardy Podczas Prowadzenia
+              </h3>
+              <p class="card-description">
+                <i class="fas fa-clipboard-check"></i>
+                86 standardów wymaganych podczas prowadzenia instytucji
+              </p>
+            </div>
 
             <div class="alert alert-info">
               <i class="fas fa-info-circle"></i>
-              <span>Te standardy muszą być spełniane podczas prowadzenia instytucji opieki.</span>
+              <div class="alert-content">
+                <strong>Informacja:</strong>
+                <span>Te standardy muszą być spełniane podczas prowadzenia instytucji opieki.</span>
+              </div>
             </div>
 
             <div id="standardsDuring"></div>
@@ -254,16 +430,25 @@
         </div>
 
         <!-- Tab Content: Fakultatywne -->
-        <div id="tab-fakultatywne" class="tab-content" role="tabpanel">
-          <div class="card">
-            <h3 class="card-title">
-              <i class="fas fa-star"></i>
-              Standardy Podnoszenia Jakości (Fakultatywne)
-            </h3>
+        <div id="tab-fakultatywne" class="tab-content" role="tabpanel" aria-labelledby="tab-fakultatywne">
+          <div class="card elevation-2">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-star"></i>
+                Standardy Podnoszenia Jakości (Fakultatywne)
+              </h3>
+              <p class="card-description">
+                <i class="fas fa-award"></i>
+                42 dobrowolne standardy podnoszące jakość opieki
+              </p>
+            </div>
 
             <div class="alert alert-success">
               <i class="fas fa-check-circle"></i>
-              <span>Te standardy są dobrowolne i służą podnoszeniu jakości opieki.</span>
+              <div class="alert-content">
+                <strong>Dobre praktyki:</strong>
+                <span>Te standardy są dobrowolne i służą podnoszeniu jakości opieki.</span>
+              </div>
             </div>
 
             <div id="standardsOptional"></div>
@@ -271,74 +456,135 @@
         </div>
 
         <!-- Tab Content: Postęp -->
-        <div id="tab-postep" class="tab-content" role="tabpanel">
-          <div class="card">
-            <h3 class="card-title">
-              <i class="fas fa-chart-line"></i>
-              Postęp Wdrożenia Standardów
-            </h3>
+        <div id="tab-postep" class="tab-content" role="tabpanel" aria-labelledby="tab-postep">
+          <div class="card elevation-2">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-chart-line"></i>
+                Postęp Wdrożenia Standardów
+              </h3>
+              <p class="card-description">
+                <i class="fas fa-analytics"></i>
+                Szczegółowa analiza postępów w implementacji standardów
+              </p>
+            </div>
             <div id="progressDetails"></div>
           </div>
         </div>
 
         <!-- Tab Content: Eksport -->
-        <div id="tab-eksport" class="tab-content" role="tabpanel">
-          <div class="card">
-            <h3 class="card-title">
-              <i class="fas fa-download"></i>
-              Eksport i Sprawozdanie
-            </h3>
+        <div id="tab-eksport" class="tab-content" role="tabpanel" aria-labelledby="tab-eksport">
+          <div class="card elevation-2">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-download"></i>
+                Eksport i Sprawozdanie
+              </h3>
+              <p class="card-description">
+                <i class="fas fa-file-export"></i>
+                Zapisz, eksportuj lub generuj dokumenty sprawozdawcze
+              </p>
+            </div>
 
             <div class="alert alert-info">
               <i class="fas fa-info-circle"></i>
-              <span>Zapisuj regularnie dane jako backup. Przed kontrolą wygeneruj kompletne sprawozdanie.</span>
+              <div class="alert-content">
+                <strong>Ważne:</strong>
+                <span>Zapisuj regularnie dane jako backup. Przed kontrolą wygeneruj kompletne sprawozdanie.</span>
+              </div>
             </div>
 
-            <div class="button-grid">
-              <button class="btn btn-primary" onclick="saveData()">
+            <div class="export-section">
+              <h4 class="section-subtitle">
                 <i class="fas fa-save"></i>
-                Zapisz Dane
-              </button>
-              <button class="btn btn-secondary" onclick="loadData()">
-                <i class="fas fa-folder-open"></i>
-                Wczytaj Dane
-              </button>
-              <button class="btn btn-success" onclick="exportJSON()">
-                <i class="fas fa-file-code"></i>
-                Eksportuj JSON
-              </button>
-              <button class="btn btn-success" onclick="generateReport()">
-                <i class="fas fa-file-alt"></i>
-                Generuj Sprawozdanie HTML
-              </button>
-              <button class="btn btn-word" onclick="generateWordDocument()">
-                <i class="fas fa-file-word"></i>
-                Generuj WORD do Wydruku
-              </button>
-              <button class="btn btn-danger" onclick="clearAll()">
-                <i class="fas fa-trash-alt"></i>
-                Wyczyść Wszystko
-              </button>
+                Zarządzanie danymi
+              </h4>
+              <div class="button-grid">
+                <button class="btn btn-primary elevation-2" onclick="saveData()">
+                  <i class="fas fa-save"></i>
+                  <span>Zapisz Dane</span>
+                </button>
+                <button class="btn btn-secondary elevation-2" onclick="loadData()">
+                  <i class="fas fa-folder-open"></i>
+                  <span>Wczytaj Dane</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="export-section">
+              <h4 class="section-subtitle">
+                <i class="fas fa-file-export"></i>
+                Eksport danych
+              </h4>
+              <div class="button-grid">
+                <button class="btn btn-success elevation-2" onclick="exportJSON()">
+                  <i class="fas fa-file-code"></i>
+                  <span>Eksportuj JSON</span>
+                </button>
+                <button class="btn btn-success elevation-2" onclick="generateReport()">
+                  <i class="fas fa-file-alt"></i>
+                  <span>Generuj Sprawozdanie HTML</span>
+                </button>
+                <button class="btn btn-word elevation-2" onclick="generateWordDocument()">
+                  <i class="fas fa-file-word"></i>
+                  <span>Generuj WORD do Wydruku</span>
+                </button>
+              </div>
             </div>
 
             <div class="import-section">
-              <h4 class="import-title">
+              <h4 class="section-subtitle">
                 <i class="fas fa-upload"></i>
                 Import danych z JSON
               </h4>
               <div class="file-input-wrapper">
-                <input type="file" id="importFile" accept=".json" class="file-input">
-                <button class="btn btn-secondary" onclick="importJSON()">
+                <label for="importFile" class="file-input-label">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <span>Wybierz plik JSON</span>
+                  <input type="file" id="importFile" accept=".json" class="file-input">
+                </label>
+                <button class="btn btn-secondary elevation-2" onclick="importJSON()">
                   <i class="fas fa-file-import"></i>
-                  Importuj JSON
+                  <span>Importuj JSON</span>
                 </button>
               </div>
+            </div>
+
+            <div class="danger-zone">
+              <h4 class="section-subtitle danger">
+                <i class="fas fa-exclamation-triangle"></i>
+                Strefa zagrożenia
+              </h4>
+              <p class="danger-zone-description">
+                <i class="fas fa-info-circle"></i>
+                Ta operacja jest nieodwracalna. Wszystkie dane zostaną trwale usunięte.
+              </p>
+              <button class="btn btn-danger elevation-2" onclick="clearAll()">
+                <i class="fas fa-trash-alt"></i>
+                <span>Wyczyść Wszystko</span>
+              </button>
             </div>
           </div>
         </div>
 
       </div>
     </main>
+  </div>
+
+  <!-- FAB (Floating Action Button) -->
+  <button class="fab elevation-6" onclick="saveData()" aria-label="Szybki zapis danych" title="Szybki zapis (Ctrl+S)">
+    <i class="fas fa-save"></i>
+  </button>
+
+  <!-- Snackbar Container -->
+  <div id="snackbar-container" class="snackbar-container" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="loading-overlay" role="alert" aria-live="assertive" aria-busy="true" style="display: none;">
+    <div class="loading-spinner">
+      <i class="fas fa-spinner fa-spin"></i>
+      <p class="loading-text">Przetwarzanie...</p>
+    </div>
   </div>
 
   <!-- Custom JavaScript -->
