@@ -523,6 +523,13 @@ body {
   background: white;
 }
 
+.form-control-lg {
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: 1rem;
+  border-radius: var(--radius-lg);
+  font-weight: 400;
+}
+
 .form-control:hover {
   border-color: var(--md-gray-400);
 }
@@ -537,6 +544,11 @@ textarea.form-control {
   resize: vertical;
   min-height: 80px;
   line-height: 1.5;
+}
+
+textarea.form-control-lg {
+  min-height: 120px;
+  line-height: 1.6;
 }
 
 /* ================================
