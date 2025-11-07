@@ -197,112 +197,169 @@
               <div class="form-section">
                 <h4 class="form-section-title">
                   <i class="fas fa-building"></i>
-                  Podstawowe dane
+                  Podstawowe dane placówki
                 </h4>
+
+                <div class="form-group">
+                  <label for="facilityName" class="form-label">
+                    <i class="fas fa-home"></i>
+                    Nazwa instytucji
+                    <span class="required-indicator" aria-label="Pole wymagane">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <input
+                      type="text"
+                      id="facilityName"
+                      class="form-control form-control-lg"
+                      placeholder="Wpisz pełną nazwę instytucji, np. Żłobek 'Słoneczko'"
+                      required
+                      aria-required="true"
+                      aria-describedby="facilityName-help">
+                    <i class="input-icon fas fa-home"></i>
+                  </div>
+                  <small id="facilityName-help" class="form-help">
+                    <i class="fas fa-info-circle"></i>
+                    Podaj oficjalną, pełną nazwę swojej placówki
+                  </small>
+                </div>
 
                 <div class="form-grid">
                   <div class="form-group">
-                    <label for="facilityName" class="form-label">
-                      <i class="fas fa-building"></i>
-                      Nazwa instytucji
-                      <span class="required-indicator" aria-label="Pole wymagane">*</span>
-                    </label>
-                    <div class="input-wrapper">
-                      <input
-                        type="text"
-                        id="facilityName"
-                        class="form-control"
-                        placeholder="np. Żłobek 'Słoneczko'"
-                        required
-                        aria-required="true"
-                        aria-describedby="facilityName-help">
-                      <i class="input-icon fas fa-building"></i>
-                    </div>
-                    <small id="facilityName-help" class="form-help">Oficjalna nazwa Twojej instytucji</small>
-                  </div>
-
-                  <div class="form-group">
                     <label for="facilityType" class="form-label">
-                      <i class="fas fa-list"></i>
+                      <i class="fas fa-layer-group"></i>
                       Typ instytucji
                       <span class="required-indicator" aria-label="Pole wymagane">*</span>
                     </label>
                     <div class="select-wrapper">
-                      <select id="facilityType" class="form-control" required aria-required="true">
-                        <option value="">-- Wybierz --</option>
-                        <option value="żłobek">Żłobek</option>
-                        <option value="klub">Klub dziecięcy</option>
-                        <option value="opiekun">Dzienny opiekun</option>
+                      <select id="facilityType" class="form-control form-control-lg" required aria-required="true">
+                        <option value="">Wybierz typ instytucji...</option>
+                        <option value="żłobek"><i class="fas fa-baby"></i> Żłobek</option>
+                        <option value="klub"><i class="fas fa-child"></i> Klub dziecięcy</option>
+                        <option value="opiekun"><i class="fas fa-user"></i> Dzienny opiekun</option>
                       </select>
                       <i class="select-icon fas fa-chevron-down"></i>
                     </div>
+                    <small class="form-help">
+                      <i class="fas fa-question-circle"></i>
+                      Wybierz formę opieki nad dziećmi
+                    </small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="facilityRegon" class="form-label">
+                      <i class="fas fa-id-card"></i>
+                      REGON
+                    </label>
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        id="facilityRegon"
+                        class="form-control form-control-lg"
+                        placeholder="np. 123456789"
+                        maxlength="14"
+                        aria-describedby="facilityRegon-help">
+                      <i class="input-icon fas fa-id-card"></i>
+                    </div>
+                    <small id="facilityRegon-help" class="form-help">
+                      <i class="fas fa-hashtag"></i>
+                      Numer REGON placówki (9 lub 14 cyfr)
+                    </small>
                   </div>
                 </div>
 
                 <div class="form-group">
                   <label for="facilityAddress" class="form-label">
                     <i class="fas fa-map-marker-alt"></i>
-                    Adres
+                    Pełny adres placówki
                   </label>
                   <div class="input-wrapper">
                     <input
                       type="text"
                       id="facilityAddress"
-                      class="form-control"
-                      placeholder="ul. Przykładowa 123, 00-001 Warszawa"
+                      class="form-control form-control-lg"
+                      placeholder="Ulica, numer domu/lokalu, kod pocztowy, miejscowość"
                       aria-describedby="facilityAddress-help">
                     <i class="input-icon fas fa-map-marker-alt"></i>
                   </div>
-                  <small id="facilityAddress-help" class="form-help">Pełny adres siedziby instytucji</small>
+                  <small id="facilityAddress-help" class="form-help">
+                    <i class="fas fa-location-arrow"></i>
+                    Przykład: ul. Słoneczna 15/2, 00-001 Warszawa
+                  </small>
                 </div>
               </div>
 
               <div class="form-section">
                 <h4 class="form-section-title">
-                  <i class="fas fa-address-book"></i>
+                  <i class="fas fa-phone-square"></i>
                   Dane kontaktowe
                 </h4>
 
                 <div class="form-grid">
                   <div class="form-group">
                     <label for="facilityPhone" class="form-label">
-                      <i class="fas fa-phone"></i>
-                      Telefon
+                      <i class="fas fa-mobile-alt"></i>
+                      Telefon kontaktowy
                     </label>
                     <div class="input-wrapper">
                       <input
                         type="tel"
                         id="facilityPhone"
-                        class="form-control"
+                        class="form-control form-control-lg"
                         placeholder="+48 123 456 789"
                         aria-describedby="facilityPhone-help">
-                      <i class="input-icon fas fa-phone"></i>
+                      <i class="input-icon fas fa-mobile-alt"></i>
                     </div>
-                    <small id="facilityPhone-help" class="form-help">Numer telefonu kontaktowego</small>
+                    <small id="facilityPhone-help" class="form-help">
+                      <i class="fas fa-phone-volume"></i>
+                      Główny numer telefonu do kontaktu
+                    </small>
                   </div>
 
                   <div class="form-group">
                     <label for="facilityEmail" class="form-label">
-                      <i class="fas fa-envelope"></i>
-                      Email
+                      <i class="fas fa-at"></i>
+                      Adres email
                     </label>
                     <div class="input-wrapper">
                       <input
                         type="email"
                         id="facilityEmail"
-                        class="form-control"
-                        placeholder="kontakt@zlobek.pl"
+                        class="form-control form-control-lg"
+                        placeholder="kontakt@placowka.pl"
                         aria-describedby="facilityEmail-help">
-                      <i class="input-icon fas fa-envelope"></i>
+                      <i class="input-icon fas fa-at"></i>
                     </div>
-                    <small id="facilityEmail-help" class="form-help">Adres email do korespondencji</small>
+                    <small id="facilityEmail-help" class="form-help">
+                      <i class="fas fa-envelope-open-text"></i>
+                      Email do korespondencji urzędowej
+                    </small>
                   </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="facilityWebsite" class="form-label">
+                    <i class="fas fa-globe"></i>
+                    Strona internetowa (opcjonalnie)
+                  </label>
+                  <div class="input-wrapper">
+                    <input
+                      type="url"
+                      id="facilityWebsite"
+                      class="form-control form-control-lg"
+                      placeholder="https://www.placowka.pl"
+                      aria-describedby="facilityWebsite-help">
+                    <i class="input-icon fas fa-globe"></i>
+                  </div>
+                  <small id="facilityWebsite-help" class="form-help">
+                    <i class="fas fa-link"></i>
+                    Adres strony WWW placówki (jeśli istnieje)
+                  </small>
                 </div>
               </div>
 
               <div class="form-section">
                 <h4 class="form-section-title">
-                  <i class="fas fa-user-cog"></i>
+                  <i class="fas fa-users-cog"></i>
                   Zarządzanie i wdrożenie
                 </h4>
 
@@ -310,56 +367,111 @@
                   <div class="form-group">
                     <label for="facilityManager" class="form-label">
                       <i class="fas fa-user-tie"></i>
-                      Osoba odpowiedzialna / Dyrektor
+                      Dyrektor / Osoba odpowiedzialna
                     </label>
                     <div class="input-wrapper">
                       <input
                         type="text"
                         id="facilityManager"
-                        class="form-control"
-                        placeholder="Jan Kowalski"
+                        class="form-control form-control-lg"
+                        placeholder="Imię i nazwisko"
                         aria-describedby="facilityManager-help">
                       <i class="input-icon fas fa-user-tie"></i>
                     </div>
-                    <small id="facilityManager-help" class="form-help">Osoba odpowiedzialna za wdrożenie standardów</small>
+                    <small id="facilityManager-help" class="form-help">
+                      <i class="fas fa-user-check"></i>
+                      Osoba nadzorująca wdrożenie standardów
+                    </small>
                   </div>
 
                   <div class="form-group">
                     <label for="startDate" class="form-label">
-                      <i class="fas fa-calendar-alt"></i>
-                      Data rozpoczęcia wdrażania standardów
+                      <i class="fas fa-calendar-check"></i>
+                      Data rozpoczęcia wdrażania
                     </label>
                     <div class="input-wrapper">
                       <input
                         type="date"
                         id="startDate"
-                        class="form-control"
+                        class="form-control form-control-lg"
                         aria-describedby="startDate-help">
-                      <i class="input-icon fas fa-calendar-alt"></i>
+                      <i class="input-icon fas fa-calendar-check"></i>
                     </div>
-                    <small id="startDate-help" class="form-help">Data rozpoczęcia procesu wdrażania</small>
+                    <small id="startDate-help" class="form-help">
+                      <i class="fas fa-hourglass-start"></i>
+                      Kiedy rozpoczęto proces wdrażania standardów
+                    </small>
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="facilityCapacity" class="form-label">
+                      <i class="fas fa-users"></i>
+                      Liczba miejsc opieki
+                    </label>
+                    <div class="input-wrapper">
+                      <input
+                        type="number"
+                        id="facilityCapacity"
+                        class="form-control form-control-lg"
+                        placeholder="np. 40"
+                        min="1"
+                        max="500"
+                        aria-describedby="facilityCapacity-help">
+                      <i class="input-icon fas fa-users"></i>
+                    </div>
+                    <small id="facilityCapacity-help" class="form-help">
+                      <i class="fas fa-child"></i>
+                      Liczba miejsc dla dzieci w placówce
+                    </small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="facilityStaff" class="form-label">
+                      <i class="fas fa-user-friends"></i>
+                      Liczba pracowników
+                    </label>
+                    <div class="input-wrapper">
+                      <input
+                        type="number"
+                        id="facilityStaff"
+                        class="form-control form-control-lg"
+                        placeholder="np. 8"
+                        min="1"
+                        max="100"
+                        aria-describedby="facilityStaff-help">
+                      <i class="input-icon fas fa-user-friends"></i>
+                    </div>
+                    <small id="facilityStaff-help" class="form-help">
+                      <i class="fas fa-id-badge"></i>
+                      Liczba osób zatrudnionych (opiekunowie + personel)
+                    </small>
                   </div>
                 </div>
               </div>
 
               <div class="form-section">
                 <h4 class="form-section-title">
-                  <i class="fas fa-comment-dots"></i>
+                  <i class="fas fa-sticky-note"></i>
                   Dodatkowe informacje
                 </h4>
 
                 <div class="form-group">
                   <label for="facilityNotes" class="form-label">
-                    <i class="fas fa-sticky-note"></i>
-                    Dodatkowe uwagi
+                    <i class="fas fa-pen-fancy"></i>
+                    Uwagi i dodatkowe informacje
                   </label>
                   <textarea
                     id="facilityNotes"
-                    class="form-control"
-                    rows="4"
-                    placeholder="Dodatkowe informacje o instytucji..."
+                    class="form-control form-control-lg"
+                    rows="5"
+                    placeholder="Miejsce na dowolne uwagi dotyczące placówki, specyfiki działania, wdrażanych programów, certyfikatów itp."
                     aria-describedby="facilityNotes-help"></textarea>
-                  <small id="facilityNotes-help" class="form-help">Miejsce na dowolne dodatkowe informacje</small>
+                  <small id="facilityNotes-help" class="form-help">
+                    <i class="fas fa-lightbulb"></i>
+                    Opisz wszystko co uznasz za istotne dla dokumentacji
+                  </small>
                 </div>
               </div>
 

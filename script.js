@@ -24386,11 +24386,41 @@ PRZYKŁAD: "Wspieramy kompetencje rodzicielskie przez: (1) biblioteczkę z ksią
       container.innerHTML = html;
     }
 
+    // Helper function to convert Unicode symbols to FontAwesome icons
+    function formatTextWithIcons(text) {
+      if (!text) return '';
+
+      // Replace checkmark symbols with FontAwesome icons
+      text = text.replace(/✓/g, '<i class="fas fa-check-circle" style="color: #10b981; margin-right: 0.25rem;"></i>');
+      text = text.replace(/✔/g, '<i class="fas fa-check-circle" style="color: #10b981; margin-right: 0.25rem;"></i>');
+      text = text.replace(/✗/g, '<i class="fas fa-times-circle" style="color: #ef4444; margin-right: 0.25rem;"></i>');
+      text = text.replace(/✖/g, '<i class="fas fa-times-circle" style="color: #ef4444; margin-right: 0.25rem;"></i>');
+
+      // Replace arrows with FontAwesome icons
+      text = text.replace(/→/g, '<i class="fas fa-arrow-right" style="color: #1e88e5; margin: 0 0.25rem;"></i>');
+      text = text.replace(/←/g, '<i class="fas fa-arrow-left" style="color: #1e88e5; margin: 0 0.25rem;"></i>');
+      text = text.replace(/↑/g, '<i class="fas fa-arrow-up" style="color: #1e88e5; margin: 0 0.25rem;"></i>');
+      text = text.replace(/↓/g, '<i class="fas fa-arrow-down" style="color: #1e88e5; margin: 0 0.25rem;"></i>');
+
+      // Replace bullets with FontAwesome icons
+      text = text.replace(/•/g, '<i class="fas fa-circle" style="color: #1e88e5; font-size: 0.5rem; margin: 0 0.25rem;"></i>');
+      text = text.replace(/◦/g, '<i class="far fa-circle" style="color: #1e88e5; font-size: 0.5rem; margin: 0 0.25rem;"></i>');
+
+      // Replace stars with FontAwesome icons
+      text = text.replace(/★/g, '<i class="fas fa-star" style="color: #f59e0b; margin-right: 0.25rem;"></i>');
+      text = text.replace(/☆/g, '<i class="far fa-star" style="color: #f59e0b; margin-right: 0.25rem;"></i>');
+
+      return text;
+    }
+
     // Render a single standard item
     function renderStandardItem(standard) {
       const badgeClass = standard.required ? 'badge-required' : 'badge-optional';
       const badgeText = standard.required ? 'Obowiązkowy' : 'Fakultatywny';
       const hasSuggestion = standardSuggestions[standard.id];
+
+      // Format description with FontAwesome icons
+      const formattedDescription = formatTextWithIcons(standard.description);
 
       return `
         <div class="standard-item" data-std-id="${standard.id}">
@@ -24406,9 +24436,9 @@ PRZYKŁAD: "Wspieramy kompetencje rodzicielskie przez: (1) biblioteczkę z ksią
                 ${standard.title}
                 <span class="badge ${badgeClass}">${badgeText}</span>
               </div>
-              <div class="standard-description">${standard.description}</div>
+              <div class="standard-description">${formattedDescription}</div>
               <div class="standard-notes">
-                ${hasSuggestion ? `<button class="btn" onclick="applySuggestion('${standard.id}')" style="background: #10b981; color: white; font-size: 0.85rem; padding: 0.4rem 0.8rem; margin-bottom: 0.5rem;">💡 Załaduj Sugestię</button>` : ''}
+                ${hasSuggestion ? `<button class="btn btn-success" onclick="applySuggestion('${standard.id}')"><i class="fas fa-lightbulb"></i> Załaduj Sugestię</button>` : ''}
                 <textarea
                   placeholder="Dodaj notatki: data wdrożenia, osoba odpowiedzialna, szczegóły..."
                   data-std-id="${standard.id}"
@@ -24578,7 +24608,7 @@ PRZYKŁAD: "Wspieramy kompetencje rodzicielskie przez: (1) biblioteczkę z ksią
       alert.style.top = '20px';
       alert.style.right = '20px';
       alert.style.zIndex = '9999';
-      alert.innerHTML = '✓ Dane zostały zapisane pomyślnie!';
+      alert.innerHTML = '<i class="fas fa-check-circle"></i> Dane zostały zapisane pomyślnie!';
       document.body.appendChild(alert);
 
       setTimeout(() => {
@@ -24644,7 +24674,7 @@ PRZYKŁAD: "Wspieramy kompetencje rodzicielskie przez: (1) biblioteczkę z ksią
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
 
-      alert('✓ Dane zostały wyeksportowane do pliku JSON!');
+      alert('Dane zostały wyeksportowane do pliku JSON!');
     }
 
     // Import JSON
@@ -24681,6 +24711,7 @@ PRZYKŁAD: "Wspieramy kompetencje rodzicielskie przez: (1) biblioteczkę z ksią
 <head>
   <meta charset="UTF-8">
   <title>Sprawozdanie - ${facilityName}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -24709,7 +24740,7 @@ PRZYKŁAD: "Wspieramy kompetencje rodzicielskie przez: (1) biblioteczkę z ksią
   </style>
 </head>
 <body>
-  <h1>📋 Sprawozdanie z Wdrażania Standardów Opieki</h1>
+  <h1><i class="fas fa-clipboard-list"></i> Sprawozdanie z Wdrażania Standardów Opieki</h1>
 
   <div class="facility-info">
     <h2>Dane Instytucji</h2>
@@ -24772,7 +24803,7 @@ PRZYKŁAD: "Wspieramy kompetencje rodzicielskie przez: (1) biblioteczkę z ksią
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
 
-      alert('✓ Sprawozdanie zostało wygenerowane i pobrane!');
+      alert('Sprawozdanie zostało wygenerowane i pobrane!');
     }
 
     // Format standard for report
@@ -24781,16 +24812,19 @@ PRZYKŁAD: "Wspieramy kompetencje rodzicielskie przez: (1) biblioteczkę z ksią
       const isChecked = stdData.checked || false;
       const notes = stdData.notes || 'Brak notatek';
 
+      // Format description with FontAwesome icons
+      const formattedDescription = formatTextWithIcons(std.description);
+
       return `
         <div class="standard-item ${isChecked ? 'checked' : 'unchecked'}">
           <div>
             <span class="status ${isChecked ? 'checked' : 'unchecked'}">
-              ${isChecked ? '✓ SPEŁNIONY' : '✗ NIESPEŁNIONY'}
+              ${isChecked ? '<i class="fas fa-check-circle"></i> SPEŁNIONY' : '<i class="fas fa-times-circle"></i> NIESPEŁNIONY'}
             </span>
           </div>
           <h4 style="margin: 10px 0;">${std.title}</h4>
-          <p>${std.description}</p>
-          ${notes !== 'Brak notatek' ? `<div class="notes"><strong>Notatki:</strong> ${notes}</div>` : ''}
+          <p>${formattedDescription}</p>
+          ${notes !== 'Brak notatek' ? `<div class="notes"><strong><i class="fas fa-sticky-note"></i> Notatki:</strong> ${notes}</div>` : ''}
         </div>
       `;
     }
@@ -24800,7 +24834,7 @@ PRZYKŁAD: "Wspieramy kompetencje rodzicielskie przez: (1) biblioteczkę z ksią
       // Verify data exists
       const savedData = localStorage.getItem('zlobek-standards-data');
       if (!savedData) {
-        alert('⚠️ UWAGA: Brak zapisanych danych!\n\nWypełnij najpierw dane żłobka i zaznacz standardy, następnie kliknij "Zapisz Dane".\n\nDopiero potem możesz wygenerować dokument WORD.');
+        alert('UWAGA: Brak zapisanych danych!\n\nWypełnij najpierw dane żłobka i zaznacz standardy, następnie kliknij "Zapisz Dane".\n\nDopiero potem możesz wygenerować dokument WORD.');
         return;
       }
 
@@ -24833,27 +24867,27 @@ PRZYKŁAD: "Wspieramy kompetencje rodzicielskie przez: (1) biblioteczkę z ksią
 
       // Show confirmation with statistics
       const confirmMessage = `
-🔍 WERYFIKACJA DANYCH DO WYGENEROWANIA:
+WERYFIKACJA DANYCH DO WYGENEROWANIA:
 
-📋 DANE ŻŁOBKA:
-   Nazwa: ${data.facilityData?.name || '⚠️ BRAK'}
-   Typ: ${data.facilityData?.type || '⚠️ BRAK'}
-   Adres: ${data.facilityData?.address || '⚠️ BRAK'}
+DANE ŻŁOBKA:
+   Nazwa: ${data.facilityData?.name || 'BRAK'}
+   Typ: ${data.facilityData?.type || 'BRAK'}
+   Adres: ${data.facilityData?.address || 'BRAK'}
 
-📊 STANDARDY DO WYGENEROWANIA:
-   ✅ Przed rejestracją: ${beforeRegChecked}/${beforeRegTotal} spełnionych
-   ✅ Podczas prowadzenia: ${duringChecked}/${duringTotal} spełnionych
-   ✅ Fakultatywne: ${optionalChecked}/${optionalTotal} spełnionych
+STANDARDY DO WYGENEROWANIA:
+   - Przed rejestracją: ${beforeRegChecked}/${beforeRegTotal} spełnionych
+   - Podczas prowadzenia: ${duringChecked}/${duringTotal} spełnionych
+   - Fakultatywne: ${optionalChecked}/${optionalTotal} spełnionych
 
-   📈 ŁĄCZNIE: ${checkedStandards}/${totalStandards} standardów (${percentComplete}%)
+   ŁĄCZNIE: ${checkedStandards}/${totalStandards} standardów (${percentComplete}%)
 
-📄 DOKUMENT BĘDZIE ZAWIERAŁ:
-   ✓ Wszystkie dane żłobka
-   ✓ Podsumowanie statystyczne
-   ✓ WSZYSTKIE 149 standardów (każdy oznaczony jako spełniony/niespełniony)
-   ✓ Wszystkie notatki które dodałeś
-   ✓ Sekcję z podpisami
-   ✓ Profesjonalne formatowanie gotowe do wydruku
+DOKUMENT BĘDZIE ZAWIERAŁ:
+   - Wszystkie dane żłobka
+   - Podsumowanie statystyczne
+   - WSZYSTKIE 149 standardów (każdy oznaczony jako spełniony/niespełniony)
+   - Wszystkie notatki które dodałeś
+   - Sekcję z podpisami
+   - Profesjonalne formatowanie gotowe do wydruku
 
 Czy chcesz wygenerować dokument WORD?
       `.trim();
