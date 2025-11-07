@@ -193,12 +193,23 @@
               </div>
             </div>
 
+            <!-- Form Progress Indicator -->
+            <div class="form-progress-container">
+              <div class="form-progress-bar">
+                <div class="form-progress-fill" id="formProgress"></div>
+              </div>
+              <div class="form-progress-text" id="formProgressText">0% wypełnione</div>
+            </div>
+
             <form class="form" id="facilityForm" novalidate>
-              <div class="form-section">
-                <h4 class="form-section-title">
+              <!-- Collapsible Section 1 -->
+              <div class="form-section collapsible-section">
+                <h4 class="form-section-title collapsible-header" onclick="toggleSection(this)">
                   <i class="fas fa-building"></i>
-                  Podstawowe dane placówki
+                  <span>Podstawowe dane placówki</span>
+                  <i class="fas fa-chevron-down collapse-icon"></i>
                 </h4>
+                <div class="collapsible-content expanded">
 
                 <div class="form-group">
                   <label for="facilityName" class="form-label">
@@ -287,12 +298,17 @@
                   </small>
                 </div>
               </div>
+              </div>
+              </div>
 
-              <div class="form-section">
-                <h4 class="form-section-title">
+              <!-- Collapsible Section 2 -->
+              <div class="form-section collapsible-section">
+                <h4 class="form-section-title collapsible-header" onclick="toggleSection(this)">
                   <i class="fas fa-phone-square"></i>
-                  Dane kontaktowe
+                  <span>Dane kontaktowe</span>
+                  <i class="fas fa-chevron-down collapse-icon"></i>
                 </h4>
+                <div class="collapsible-content expanded">
 
                 <div class="form-grid">
                   <div class="form-group">
@@ -356,12 +372,17 @@
                   </small>
                 </div>
               </div>
+              </div>
+              </div>
 
-              <div class="form-section">
-                <h4 class="form-section-title">
+              <!-- Collapsible Section 3 -->
+              <div class="form-section collapsible-section">
+                <h4 class="form-section-title collapsible-header" onclick="toggleSection(this)">
                   <i class="fas fa-users-cog"></i>
-                  Zarządzanie i wdrożenie
+                  <span>Zarządzanie i wdrożenie</span>
+                  <i class="fas fa-chevron-down collapse-icon"></i>
                 </h4>
+                <div class="collapsible-content expanded">
 
                 <div class="form-grid">
                   <div class="form-group">
@@ -450,12 +471,17 @@
                   </div>
                 </div>
               </div>
+              </div>
+              </div>
 
-              <div class="form-section">
-                <h4 class="form-section-title">
+              <!-- Collapsible Section 4 -->
+              <div class="form-section collapsible-section">
+                <h4 class="form-section-title collapsible-header" onclick="toggleSection(this)">
                   <i class="fas fa-sticky-note"></i>
-                  Dodatkowe informacje
+                  <span>Dodatkowe informacje</span>
+                  <i class="fas fa-chevron-down collapse-icon"></i>
                 </h4>
+                <div class="collapsible-content expanded">
 
                 <div class="form-group">
                   <label for="facilityNotes" class="form-label">
@@ -473,6 +499,8 @@
                     Opisz wszystko co uznasz za istotne dla dokumentacji
                   </small>
                 </div>
+              </div>
+              </div>
               </div>
 
               <div class="form-actions">
@@ -511,6 +539,30 @@
               </div>
             </div>
 
+            <!-- Bulk Actions Toolbar -->
+            <div class="bulk-actions-toolbar">
+              <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchBefore" placeholder="Szukaj w standardach..." onkeyup="filterStandards('before', this.value)">
+              </div>
+              <div class="bulk-actions-buttons">
+                <button class="btn btn-secondary btn-sm" onclick="bulkCheckAll('before', true)" title="Zaznacz wszystkie">
+                  <i class="fas fa-check-double"></i>
+                  <span>Zaznacz wszystkie</span>
+                </button>
+                <button class="btn btn-secondary btn-sm" onclick="bulkCheckAll('before', false)" title="Odznacz wszystkie">
+                  <i class="fas fa-times"></i>
+                  <span>Odznacz wszystkie</span>
+                </button>
+                <button class="btn btn-secondary btn-sm" onclick="expandAllSections('standardsBeforeRegister')" title="Rozwiń wszystkie">
+                  <i class="fas fa-expand-alt"></i>
+                </button>
+                <button class="btn btn-secondary btn-sm" onclick="collapseAllSections('standardsBeforeRegister')" title="Zwiń wszystkie">
+                  <i class="fas fa-compress-alt"></i>
+                </button>
+              </div>
+            </div>
+
             <div id="standardsBeforeRegister"></div>
           </div>
         </div>
@@ -537,6 +589,30 @@
               </div>
             </div>
 
+            <!-- Bulk Actions Toolbar -->
+            <div class="bulk-actions-toolbar">
+              <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchDuring" placeholder="Szukaj w standardach..." onkeyup="filterStandards('during', this.value)">
+              </div>
+              <div class="bulk-actions-buttons">
+                <button class="btn btn-secondary btn-sm" onclick="bulkCheckAll('during', true)" title="Zaznacz wszystkie">
+                  <i class="fas fa-check-double"></i>
+                  <span>Zaznacz wszystkie</span>
+                </button>
+                <button class="btn btn-secondary btn-sm" onclick="bulkCheckAll('during', false)" title="Odznacz wszystkie">
+                  <i class="fas fa-times"></i>
+                  <span>Odznacz wszystkie</span>
+                </button>
+                <button class="btn btn-secondary btn-sm" onclick="expandAllSections('standardsDuring')" title="Rozwiń wszystkie">
+                  <i class="fas fa-expand-alt"></i>
+                </button>
+                <button class="btn btn-secondary btn-sm" onclick="collapseAllSections('standardsDuring')" title="Zwiń wszystkie">
+                  <i class="fas fa-compress-alt"></i>
+                </button>
+              </div>
+            </div>
+
             <div id="standardsDuring"></div>
           </div>
         </div>
@@ -560,6 +636,30 @@
               <div class="alert-content">
                 <strong>Dobre praktyki:</strong>
                 <span>Te standardy są dobrowolne i służą podnoszeniu jakości opieki.</span>
+              </div>
+            </div>
+
+            <!-- Bulk Actions Toolbar -->
+            <div class="bulk-actions-toolbar">
+              <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchOptional" placeholder="Szukaj w standardach..." onkeyup="filterStandards('optional', this.value)">
+              </div>
+              <div class="bulk-actions-buttons">
+                <button class="btn btn-secondary btn-sm" onclick="bulkCheckAll('optional', true)" title="Zaznacz wszystkie">
+                  <i class="fas fa-check-double"></i>
+                  <span>Zaznacz wszystkie</span>
+                </button>
+                <button class="btn btn-secondary btn-sm" onclick="bulkCheckAll('optional', false)" title="Odznacz wszystkie">
+                  <i class="fas fa-times"></i>
+                  <span>Odznacz wszystkie</span>
+                </button>
+                <button class="btn btn-secondary btn-sm" onclick="expandAllSections('standardsOptional')" title="Rozwiń wszystkie">
+                  <i class="fas fa-expand-alt"></i>
+                </button>
+                <button class="btn btn-secondary btn-sm" onclick="collapseAllSections('standardsOptional')" title="Zwiń wszystkie">
+                  <i class="fas fa-compress-alt"></i>
+                </button>
               </div>
             </div>
 
@@ -697,6 +797,65 @@
       <i class="fas fa-spinner fa-spin"></i>
       <p class="loading-text">Przetwarzanie...</p>
     </div>
+  </div>
+
+  <!-- Keyboard Shortcuts Help Button -->
+  <button class="help-button" onclick="toggleKeyboardShortcuts()" title="Skróty klawiszowe (?)">
+    <i class="fas fa-keyboard"></i>
+  </button>
+
+  <!-- Keyboard Shortcuts Modal -->
+  <div id="keyboard-shortcuts-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3><i class="fas fa-keyboard"></i> Skróty klawiszowe</h3>
+        <button class="modal-close" onclick="toggleKeyboardShortcuts()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="shortcuts-grid">
+          <div class="shortcut-item">
+            <kbd>Ctrl</kbd> + <kbd>S</kbd>
+            <span>Zapisz dane</span>
+          </div>
+          <div class="shortcut-item">
+            <kbd>Ctrl</kbd> + <kbd>E</kbd>
+            <span>Eksportuj JSON</span>
+          </div>
+          <div class="shortcut-item">
+            <kbd>Ctrl</kbd> + <kbd>F</kbd>
+            <span>Szukaj w standardach</span>
+          </div>
+          <div class="shortcut-item">
+            <kbd>Ctrl</kbd> + <kbd>A</kbd>
+            <span>Zaznacz wszystkie</span>
+          </div>
+          <div class="shortcut-item">
+            <kbd>Ctrl</kbd> + <kbd>D</kbd>
+            <span>Odznacz wszystkie</span>
+          </div>
+          <div class="shortcut-item">
+            <kbd>?</kbd>
+            <span>Pokaż skróty</span>
+          </div>
+          <div class="shortcut-item">
+            <kbd>Esc</kbd>
+            <span>Zamknij modala</span>
+          </div>
+          <div class="shortcut-item">
+            <kbd>Tab</kbd>
+            <span>Następna zakładka</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Auto-save Indicator -->
+  <div id="autosave-indicator" class="autosave-indicator" style="display: none;">
+    <i class="fas fa-check-circle"></i>
+    <span>Automatycznie zapisano</span>
   </div>
 
   <!-- Custom JavaScript -->
