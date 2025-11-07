@@ -24490,7 +24490,7 @@ PRZYKŁAD: "Wspieramy kompetencje rodzicielskie przez: (1) biblioteczkę z ksią
 
       container.innerHTML = `
         <div style="text-align: center; margin: 2rem 0;">
-          <div style="font-size: 4rem; font-weight: 700; color: #667eea;">${percent}%</div>
+          <div style="font-size: 4rem; font-weight: 700; color: #1e88e5;">${percent}%</div>
           <div style="font-size: 1.2rem; color: #6b7280;">Ogólny postęp wdrożenia</div>
           <div style="margin-top: 1rem; font-size: 1.1rem; color: #1f2937;">
             <strong>${checked}</strong> z <strong>${total}</strong> standardów spełnionych
@@ -24689,8 +24689,8 @@ PRZYKŁAD: "Wspieramy kompetencje rodzicielskie przez: (1) biblioteczkę z ksią
       padding: 40px;
       line-height: 1.6;
     }
-    h1 { color: #1f2937; border-bottom: 3px solid #667eea; padding-bottom: 10px; }
-    h2 { color: #667eea; margin-top: 30px; }
+    h1 { color: #1f2937; border-bottom: 3px solid #1e88e5; padding-bottom: 10px; }
+    h2 { color: #1e88e5; margin-top: 30px; }
     h3 { color: #4b5563; margin-top: 20px; }
     .facility-info { background: #f3f4f6; padding: 20px; border-radius: 10px; margin: 20px 0; }
     .facility-info p { margin: 8px 0; }
@@ -24883,7 +24883,7 @@ Czy chcesz wygenerować dokument WORD?
       font-size: 18pt;
       font-weight: bold;
       color: #1f2937;
-      border-bottom: 3px solid #667eea;
+      border-bottom: 3px solid #1e88e5;
       padding-bottom: 10px;
       margin-top: 0;
       page-break-after: avoid;
@@ -24891,7 +24891,7 @@ Czy chcesz wygenerować dokument WORD?
     h2 {
       font-size: 15pt;
       font-weight: bold;
-      color: #667eea;
+      color: #1e88e5;
       margin-top: 20pt;
       margin-bottom: 10pt;
       page-break-after: avoid;
@@ -24996,7 +24996,7 @@ Czy chcesz wygenerować dokument WORD?
       font-size: 10pt;
     }
     .notes strong {
-      color: #667eea;
+      color: #1e88e5;
     }
     .footer {
       margin-top: 30pt;
