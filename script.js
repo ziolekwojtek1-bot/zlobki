@@ -25235,6 +25235,7 @@ Czy chcesz wygenerować dokument WORD?
       tabButtons.forEach(button => {
         button.addEventListener('click', () => {
           const tabName = button.getAttribute('data-tab');
+          const tabLabel = button.getAttribute('data-label');
 
           // Hide all tab contents
           document.querySelectorAll('.tab-content').forEach(content => {
@@ -25258,12 +25259,23 @@ Czy chcesz wygenerować dokument WORD?
             content.classList.add('active');
           }
 
+          // Update breadcrumb
+          updateBreadcrumb(tabLabel);
+
           // Update progress if showing progress tab
           if (tabName === 'postep') {
             updateProgress();
           }
         });
       });
+    }
+
+    // Update breadcrumb
+    function updateBreadcrumb(label) {
+      const breadcrumb = document.getElementById('currentBreadcrumb');
+      if (breadcrumb && label) {
+        breadcrumb.textContent = label;
+      }
     }
 
     // Sidebar toggle for mobile
