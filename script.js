@@ -25392,3 +25392,265 @@ Czy chcesz wygenerować dokument WORD?
 
     // Initialize on page load
     window.addEventListener('DOMContentLoaded', initApp);
+
+// ==========================================
+// ADVANCED UI FEATURES
+// ==========================================
+
+// Toggle collapsible section in form
+function toggleSection(header) {
+  const content = header.nextElementSibling;
+  header.classList.toggle('collapsed');
+  content.classList.toggle('expanded');
+}
+
+// Calculate and update form progress
+function calculateFormProgress() {
+  const form = document.getElementById('facilityForm');
+  if (!form) return;
+
+  const inputs = form.querySelectorAll('input, select, textarea');
+  let filled = 0;
+  let total = inputs.length;
+
+  inputs.forEach(input => {
+    if (input.value && input.value.trim() !== '') {
+      filled++;
+    }
+  });
+
+  const percentage = Math.round((filled / total) * 100);
+  const progressFill = document.getElementById('formProgress');
+  const progressText = document.getElementById('formProgressText');
+
+  if (progressFill) {
+    progressFill.style.width = percentage + '%';
+  }
+
+  if (progressText) {
+    progressText.textContent = percentage + '% wypełnione';
+  }
+}
+
+// Bulk check/uncheck all standards in a section
+function bulkCheckAll(section, checked) {
+  let containerId = '';
+
+  switch(section) {
+    case 'before':
+      containerId = 'standardsBeforeRegister';
+      break;
+    case 'during':
+      containerId = 'standardsDuring';
+      break;
+    case 'optional':
+      containerId = 'standardsOptional';
+      break;
+  }
+
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const checkboxes = container.querySelectorAll('.standard-checkbox');
+  checkboxes.forEach(cb => {
+    if (cb.checked !== checked) {
+      cb.checked = checked;
+      cb.dispatchEvent(new Event('change'));
+    }
+  });
+
+  showToast(
+    checked ? 'Wszystkie standardy zostały zaznaczone' : 'Wszystkie standardy zostały odznaczone',
+    'success'
+  );
+}
+
+// Filter/search standards
+function filterStandards(section, query) {
+  let containerId = '';
+
+  switch(section) {
+    case 'before':
+      containerId = 'standardsBeforeRegister';
+      break;
+    case 'during':
+      containerId = 'standardsDuring';
+      break;
+    case 'optional':
+      containerId = 'standardsOptional';
+      break;
+  }
+
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const standardItems = container.querySelectorAll('.standard-item');
+  const searchQuery = query.toLowerCase();
+
+  standardItems.forEach(item => {
+    const title = item.querySelector('.standard-title')?.textContent.toLowerCase() || '';
+    const description = item.querySelector('.standard-description')?.textContent.toLowerCase() || '';
+
+    if (title.includes(searchQuery) || description.includes(searchQuery)) {
+      item.classList.remove('hidden');
+    } else {
+      item.classList.add('hidden');
+    }
+  });
+}
+
+// Expand all subsections in a standards container
+function expandAllSections(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const headers = container.querySelectorAll('.collapsible-header, .standard-section-title');
+  headers.forEach(header => {
+    if (header.classList.contains('collapsed')) {
+      header.click();
+    }
+  });
+}
+
+// Collapse all subsections in a standards container
+function collapseAllSections(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const headers = container.querySelectorAll('.collapsible-header, .standard-section-title');
+  headers.forEach(header => {
+    if (!header.classList.contains('collapsed')) {
+      header.click();
+    }
+  });
+}
+
+// Toggle keyboard shortcuts modal
+function toggleKeyboardShortcuts() {
+  const modal = document.getElementById('keyboard-shortcuts-modal');
+  if (modal) {
+    modal.style.display = modal.style.display === 'none' ? 'flex' : 'none';
+  }
+}
+
+// Show autosave indicator
+function showAutosaveIndicator() {
+  const indicator = document.getElementById('autosave-indicator');
+  if (!indicator) return;
+
+  indicator.style.display = 'flex';
+
+  setTimeout(() => {
+    indicator.style.display = 'none';
+  }, 2000);
+}
+
+// Setup keyboard shortcuts
+function setupKeyboardShortcuts() {
+  document.addEventListener('keydown', (e) => {
+    // Ctrl+S - Save
+    if (e.ctrlKey && e.key === 's') {
+      e.preventDefault();
+      saveData();
+      showAutosaveIndicator();
+    }
+
+    // Ctrl+E - Export JSON
+    if (e.ctrlKey && e.key === 'e') {
+      e.preventDefault();
+      exportJSON();
+    }
+
+    // Ctrl+F - Focus search (active tab)
+    if (e.ctrlKey && e.key === 'f') {
+      e.preventDefault();
+      const activeTab = document.querySelector('.tab-content.active');
+      if (activeTab) {
+        const searchInput = activeTab.querySelector('.search-box input');
+        if (searchInput) {
+          searchInput.focus();
+        }
+      }
+    }
+
+    // Ctrl+A - Check all in active tab
+    if (e.ctrlKey && e.key === 'a') {
+      const activeTabBtn = document.querySelector('.tab-btn.active');
+      if (activeTabBtn) {
+        const tabName = activeTabBtn.getAttribute('data-tab');
+        if (['przed', 'podczas', 'fakultatywne'].includes(tabName)) {
+          e.preventDefault();
+          const sectionMap = {
+            'przed': 'before',
+            'podczas': 'during',
+            'fakultatywne': 'optional'
+          };
+          bulkCheckAll(sectionMap[tabName], true);
+        }
+      }
+    }
+
+    // Ctrl+D - Uncheck all in active tab
+    if (e.ctrlKey && e.key === 'd') {
+      const activeTabBtn = document.querySelector('.tab-btn.active');
+      if (activeTabBtn) {
+        const tabName = activeTabBtn.getAttribute('data-tab');
+        if (['przed', 'podczas', 'fakultatywne'].includes(tabName)) {
+          e.preventDefault();
+          const sectionMap = {
+            'przed': 'before',
+            'podczas': 'during',
+            'fakultatywne': 'optional'
+          };
+          bulkCheckAll(sectionMap[tabName], false);
+        }
+      }
+    }
+
+    // ? - Show keyboard shortcuts
+    if (e.key === '?' && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+      const activeElement = document.activeElement;
+      if (activeElement.tagName !== 'INPUT' && activeElement.tagName !== 'TEXTAREA') {
+        e.preventDefault();
+        toggleKeyboardShortcuts();
+      }
+    }
+
+    // Esc - Close modal
+    if (e.key === 'Escape') {
+      const modal = document.getElementById('keyboard-shortcuts-modal');
+      if (modal && modal.style.display !== 'none') {
+        toggleKeyboardShortcuts();
+      }
+    }
+  });
+}
+
+// Track form input changes for progress
+function setupFormProgressTracking() {
+  const form = document.getElementById('facilityForm');
+  if (!form) return;
+
+  const inputs = form.querySelectorAll('input, select, textarea');
+  inputs.forEach(input => {
+    input.addEventListener('input', calculateFormProgress);
+    input.addEventListener('change', calculateFormProgress);
+  });
+
+  // Initial calculation
+  calculateFormProgress();
+}
+
+// Initialize advanced UI features
+function initAdvancedUI() {
+  setupKeyboardShortcuts();
+  setupFormProgressTracking();
+  calculateFormProgress();
+}
+
+// Call on page load
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAdvancedUI);
+} else {
+  initAdvancedUI();
+}
