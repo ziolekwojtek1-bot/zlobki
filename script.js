@@ -9,42 +9,42 @@
               {
                 id: 'br-pd-1',
                 title: 'Plan opiekuńczo-wychowawczo-edukacyjny - Cele',
-                description: 'Plan obejmuje cele opiekuńczo-wychowawczo-edukacyjne',
+                description: 'Plan opiekuńczo-wychowawczo-edukacyjny zawiera jasno sformułowane cele wspierające holistyczny rozwój dziecka w obszarach: fizycznym, emocjonalnym, społecznym, poznawczym oraz komunikacyjnym, z uwzględnieniem indywidualnych potrzeb rozwojowych i specyfiki wieku każdego dziecka uczęszczającego do placówki',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-pd-2',
                 title: 'Plan opiekuńczo-wychowawczo-edukacyjny - Metody pracy',
-                description: 'Plan zawiera metody pracy z dziećmi',
+                description: 'Plan zawiera szczegółowy opis metod pedagogicznych dostosowanych do wieku i możliwości rozwojowych dzieci, opartych na założeniach pedagogiki zabawy, aktywnego uczestnictwa oraz respektowania naturalnych potrzeb dziecka do eksploracji, ruchu i samodzielności',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-pd-3',
                 title: 'Plan opiekuńczo-wychowawczo-edukacyjny - Harmonogram',
-                description: 'Plan zawiera harmonogram obejmujący stałe i zmienne elementy dnia',
+                description: 'Plan zawiera harmonogram dnia uwzględniający rytm biologiczny małego dziecka, z zachowaniem równowagi między stałymi elementami zapewniającymi poczucie bezpieczeństwa (posiłki, odpoczynek) a elastycznymi momentami wspierającymi spontaniczną zabawę i eksplorację otoczenia',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-pd-4',
                 title: 'Plan opiekuńczo-wychowawczo-edukacyjny - Planowane aktywności',
-                description: 'Plan zawiera planowane aktywności',
+                description: 'Plan zawiera zróżnicowane aktywności edukacyjne i opiekuńcze wspierające wielokierunkowy rozwój dziecka, uwzględniające zarówno zabawy swobodne inicjowane przez dzieci, jak i proponowane przez pedagoga sytuacje uczące, dostosowane do aktualnych zainteresowań i możliwości rozwojowych grupy',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-pd-5',
                 title: 'Plan uwzględnia specyfikę instytucji',
-                description: 'Plan uwzględnia specyfikę instytucji opieki dotyczącą dostępnej przestrzeni, lokalizacji i zasobów',
+                description: 'Plan uwzględnia unikalne warunki i możliwości placówki, w tym dostępną przestrzeń edukacyjną, lokalizację (miejska/wiejska), zasoby materialne oraz specyfikę środowiska lokalnego, co pozwala na optymalne wykorzystanie potencjału placówki w służbie rozwoju dzieci',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-pd-6',
                 title: 'Plan jest akceptowany',
-                description: 'Plan jest akceptowany przez podmiot prowadzący instytucję opieki lub dziennego opiekuna prowadzącego działalność na własny rachunek',
+                description: 'Plan został zatwierdzony przez podmiot prowadzący instytucję opieki lub dziennego opiekuna, co potwierdza jego zgodność z misją placówki, obowiązującymi przepisami oraz standardami jakości opieki nad małym dzieckiem',
                 type: 'before-register',
                 required: true
               }
@@ -56,77 +56,77 @@
               {
                 id: 'br-op-1',
                 title: 'Procedury przebywania osób dorosłych',
-                description: 'Określone są procedury przebywania osób dorosłych innych niż personel i rodzice na terenie instytucji opieki',
+                description: 'Placówka posiada jasne i precyzyjne procedury regulujące przebywanie osób dorosłych (innych niż personel i rodzice) na terenie instytucji, co zapewnia bezpieczeństwo psychofizyczne dzieci oraz chroni ich prawo do prywatności i intymności w środowisku opiekuńczo-edukacyjnym',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-op-2',
                 title: 'Procedury przyjmowania i odbierania dzieci',
-                description: 'Określone są procedury przyjmowania i odbierania dzieci z instytucji opieki',
+                description: 'Placówka dysponuje szczegółowymi procedurami przyjmowania dzieci do placówki i ich odbierania, uwzględniającymi znaczenie momentów separacji i ponownego spotkania z rodzicem dla emocjonalnego bezpieczeństwa małego dziecka oraz zapewniającymi najwyższe standardy bezpieczeństwa',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-op-3',
                 title: 'Procedury postępowania w przypadku choroby',
-                description: 'Określone są procedury postępowania w przypadku choroby dzieci',
+                description: 'Placówka posiada przemyślane procedury postępowania w sytuacji choroby dziecka, uwzględniające zarówno aspekty zdrowotne i bezpieczeństwo całej grupy, jak i emocjonalne potrzeby chorego dziecka wymagającego szczególnej troski i bliskości opiekuna',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-op-4',
                 title: 'Program adaptacji dzieci',
-                description: 'Sporządzony jest ramowy program adaptacji dzieci uwzględniający aktywny udział rodziców',
+                description: 'Placówka opracowała program adaptacyjny respektujący indywidualny rytm i tempo przystosowania się każdego dziecka do nowego środowiska, z aktywnym włączeniem rodziców jako kluczowych partnerów w budowaniu poczucia bezpieczeństwa i zaufania dziecka do nowych opiekunów',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-op-5',
                 title: 'Warunki do swobodnego poruszania się',
-                description: 'Zapewnione są warunki do swobodnego poruszania się dzieci',
+                description: 'Przestrzeń placówki została zorganizowana w sposób umożliwiający dzieciom swobodną eksplorację ruchową, co wspiera naturalną potrzebę aktywności fizycznej małego dziecka oraz sprzyja rozwojowi motoryki dużej, koordynacji ruchowej i budowaniu poczucia sprawczości',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-op-6',
                 title: 'Warunki do odpoczynku',
-                description: 'Zapewnione są warunki do odpoczynku dzieci',
+                description: 'Placówka zapewnia odpowiednie warunki do regeneracji sił poprzez odpoczynek, uwzględniając indywidualne potrzeby senne dzieci oraz znaczenie jakości snu dla harmonijnego rozwoju psychofizycznego, emocjonalnego i poznawczego małego dziecka',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-op-7',
                 title: 'Warunki do zachowania intymności',
-                description: 'Zapewnione są warunki do zachowania intymności podczas czynności higienicznych dzieci',
+                description: 'Placówka respektuje prawo dziecka do intymności podczas czynności higienicznych i pielęgnacyjnych, kształtując od najwcześniejszych lat świadomość granic własnego ciała oraz budując poczucie godności i szacunku do własnej osoby',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-op-8',
                 title: 'Warunki do rozwijania samodzielności podczas posiłków',
-                description: 'Zapewnione są warunki do rozwijania samodzielności dzieci w czasie posiłków',
+                description: 'Organizacja sytuacji posiłkowych wspiera naturalną potrzebę samodzielności dziecka, umożliwiając mu aktywne uczestnictwo w jedzeniu zgodnie z indywidualnym tempem rozwoju, co buduje poczucie sprawczości, kompetencji oraz pozytywny stosunek do czynności życia codziennego',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-op-9',
                 title: 'Warunki do artystycznej ekspresji',
-                description: 'Zapewnione są warunki do artystycznej ekspresji dzieci',
+                description: 'Placówka stwarza przestrzeń do swobodnego wyrażania siebie poprzez różnorodne formy ekspresji artystycznej, wspierając naturalną kreatywność dziecka, jego wyobraźnię oraz potrzebę komunikowania wewnętrznych przeżyć i emocji językiem sztuki',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-op-10',
                 title: 'Warunki do kontaktu z naturą',
-                description: 'Zapewnione są warunki do kontaktu dzieci z naturą',
+                description: 'Placówka umożliwia dzieciom bezpośredni, regularny kontakt ze światem przyrody, co odpowiada na fundamentalną potrzebę małego dziecka do poznawania naturalnego środowiska wszystkimi zmysłami oraz wspiera rozwój wrażliwości ekologicznej i poczucia więzi z żywym światem',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-op-11',
                 title: 'Warunki do aktywności edukacyjnych',
-                description: 'Zapewnione są warunki do aktywności edukacyjnych dzieci umożliwiających im poznawanie świata',
+                description: 'Placówka organizuje bogate środowisko edukacyjne stymulujące naturalną ciekawość poznawczą dziecka, umożliwiające samodzielne odkrywanie, eksperymentowanie i wyciąganie wniosków, co wspiera rozwój myślenia, rozumowania oraz konstruowania wiedzy o otaczającej rzeczywistości',
                 type: 'before-register',
                 required: true
               }
@@ -138,28 +138,28 @@
               {
                 id: 'br-wr-1',
                 title: 'Dokument z prawami i obowiązkami',
-                description: 'Stworzony jest dokument, w którym określone są prawa i obowiązki rodziców oraz instytucji opieki, które zostaną zawarte we wzorze umowy z rodzicami dotyczącej pobytu dziecka w instytucji opieki lub w regulaminie organizacyjnym instytucji opieki',
+                description: 'Placówka dysponuje przejrzystym dokumentem definiującym wzajemne prawa i obowiązki rodziców oraz instytucji, stanowiącym fundament partnerskiej współpracy opartej na szacunku, zaufaniu i wspólnej trosce o dobro dziecka, jego bezpieczeństwo i harmonijny rozwój',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-wr-2',
                 title: 'Sposób zbierania informacji o dzieciach',
-                description: 'Określony jest sposób zbierania przez personel informacji dotyczących istotnych potrzeb, preferencji, nawyków i umiejętności dzieci',
+                description: 'Placówka posiada wypracowane procedury gromadzenia wiedzy o indywidualnych potrzebach, preferencjach, nawykach i umiejętnościach każdego dziecka, co umożliwia personelowi zapewnienie responsywnej opieki szanującej unikalność każdego dziecka i wspierającej jego indywidualną ścieżkę rozwoju',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-wr-3',
                 title: 'Zasady bieżącej komunikacji',
-                description: 'Określone są zasady bieżącej komunikacji z rodzicami',
+                description: 'Placówka ustanowiła zasady systematycznej, dwukierunkowej komunikacji z rodzicami, umożliwiającej wymianę istotnych informacji o dziecku, budowanie zaufania oraz tworzenie spójnego środowiska wychowawczego między domem a placówką dla zapewnienia ciągłości i bezpieczeństwa emocjonalnego dziecka',
                 type: 'before-register',
                 required: true
               },
               {
                 id: 'br-wr-4',
                 title: 'System zgłaszania uwag i skarg',
-                description: 'Określony jest system zgłaszania i rozpatrywania uwag, wniosków i skarg rodziców',
+                description: 'Placówka zapewnia transparentny i przyjazny system zgłaszania oraz konstruktywnego rozpatrywania uwag, wniosków i skarg rodziców, co świadczy o kulturze dialogu, otwartości na głos rodziców oraz dążeniu do ciągłego doskonalenia jakości opieki i praktyki pedagogicznej',
                 type: 'before-register',
                 required: true
               }
@@ -179,35 +179,35 @@
                   {
                     id: 'dr-pd-resp-1',
                     title: 'Warunki do odpoczynku w dwóch różnych formach',
-                    description: 'Instytucja opieki stwarza dzieciom warunki do odpoczynku w pomieszczeniu w dwóch różnych formach (w szczególności: odpoczynek na leżaczkach, cicha aktywność na dywanie)',
+                    description: 'Placówka respektuje zróżnicowane potrzeby odpoczynkowe dzieci, oferując co najmniej dwie formy regeneracji sił (np. odpoczynek na leżaczkach, cicha aktywność na dywanie), co pozwala dziecku na wybór formy odpowiadającej jego aktualnym potrzebom i wspiera rozwój autonomii oraz samoświadomości ciała',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-resp-2',
                     title: 'Lista działań wspierających autonomię - czynności higieniczne',
-                    description: 'Instytucja opieki ma spisaną listę działań personelu wspierających autonomię dziecka podczas czynności higienicznych (mycie rąk, toaleta, zmiana pieluchy i inne)',
+                    description: 'Placówka opracowała katalog działań pedagogicznych wspierających rozwój autonomii dziecka podczas czynności pielęgnacyjnych i higienicznych, traktując te momenty jako cenne sytuacje wychowawcze budujące poczucie sprawczości, kompetencji oraz pozytywny obraz własnego ciała i szacunek dla własnej osoby',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-resp-3',
                     title: 'Samoocena działań - czynności higieniczne (min. raz w roku)',
-                    description: 'Minimum raz w roku personel dokonuje samooceny działań wspierających autonomię dziecka podczas czynności higienicznych w sposób ustalony przez instytucję opieki, a wnioski z przeprowadzonej samooceny są dokumentowane',
+                    description: 'Personel regularnie (minimum raz w roku) dokonuje refleksyjnej samooceny swojej praktyki pedagogicznej w zakresie wspierania autonomii dziecka podczas czynności higienicznych, co stanowi element kultury refleksyjnego praktyko świadczącej o wysokich kompetencjach zawodowych oraz zaangażowaniu w rozwój profesjonalny',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-resp-4',
                     title: 'Lista działań wspierających samodzielność - posiłki',
-                    description: 'Instytucja opieki ma spisaną listę działań personelu wspierających samodzielność dziecka podczas posiłków',
+                    description: 'Placówka dysponuje przemyślanym zestawem działań pedagogicznych wspierających rozwój samodzielności dziecka podczas posiłków, traktując sytuacje jedzenia jako ważne momenty edukacyjne rozwijające nie tylko umiejętności praktyczne, ale także postawę otwartości na nowe smaki, kulturę jedzenia i pozytywną relację z pożywieniem',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-resp-5',
                     title: 'Samoocena działań - posiłki (min. raz w roku)',
-                    description: 'Personel dokonuje, minimum raz w roku, samooceny działań wspierających autonomię dziecka podczas posiłków, a wnioski z przeprowadzonej samooceny są dokumentowane',
+                    description: 'Personel systematycznie (minimum raz w roku) poddaje refleksji swoją praktykę wspierania samodzielności dzieci podczas posiłków, dokumentując wnioski i podejmując działania doskonalące, co świadczy o profesjonalizmie, kulturze uczenia się z własnej praktyki oraz dążeniu do ciągłego podnoszenia jakości pracy pedagogicznej',
                     type: 'during',
                     required: true
                   }
@@ -219,28 +219,28 @@
                   {
                     id: 'dr-pd-rel-1',
                     title: 'Wspólne sposoby nawiązywania relacji',
-                    description: 'W instytucji opieki określone są wspólne dla całego personelu sposoby nawiązywania relacji z dziećmi dające im poczucie bezpieczeństwa',
+                    description: 'Placówka wypracowała spójne, wspólne dla całego zespołu pedagogicznego sposoby nawiązywania relacji z dziećmi, oparte na ciepłej responsywności, akceptacji i szacunku, co buduje atmosferę bezpieczeństwa emocjonalnego jako fundamentu zdrowego rozwoju psychospołecznego małego dziecka',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-rel-2',
                     title: 'Wspólne sposoby reagowania',
-                    description: 'Określone są wspólne sposoby reagowania werbalnie i niewerbalnie na zachowania dzieci',
+                    description: 'Zespół pedagogiczny stosuje uzgodnione, wspólne sposoby reagowania werbalnego i niewerbalnego na zachowania dzieci, uwzględniające zasady komunikacji wspierającej, języka pozytywnych komunikatów oraz respektowania emocji dziecka, co zapewnia dzieciom przewidywalność i spójność oddziaływań wychowawczych',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-rel-3',
                     title: 'Wspólne sposoby komunikowania aktywności',
-                    description: 'Określone są wspólne sposoby komunikowania dzieciom aktywności w ciągu dnia i zmian z tym związanych',
+                    description: 'Placówka stosuje wypracowane, spójne sposoby komunikowania dzieciom przebiegu dnia oraz nadchodzących zmian, uwzględniając potrzebę przewidywalności i bezpieczeństwa małego dziecka, a także dostosowując formę komunikatu do poziomu rozwoju językowego i poznawczego grupy',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-rel-4',
                     title: 'Samoocena zadań dotyczących interakcji (min. raz w roku)',
-                    description: 'Minimum raz w roku personel dokonuje samooceny zadań dotyczących interakcji z dziećmi w sposób ustalony przez instytucję opieki, a wnioski z przeprowadzonej samooceny są dokumentowane',
+                    description: 'Personel regularnie (minimum raz w roku) dokonuje autorefleksji nad jakością swoich interakcji z dziećmi, analizując sposób budowania relacji, komunikacji i reagowania na potrzeby dzieci, co stanowi przejaw kultury refleksyjnej praktyki oraz świadomego doskonalenia kompetencji społeczno-emocjonalnych pedagoga',
                     type: 'during',
                     required: true
                   }
@@ -252,35 +252,35 @@
                   {
                     id: 'dr-pd-przyn-1',
                     title: 'Wskazówki metodyczne - przynależność do grupy',
-                    description: 'W planie opiekuńczo-wychowawczo-edukacyjnym są spisane wskazówki metodyczne sprzyjające rozwojowi u dzieci poczucia przynależności do grupy oraz zainteresowania innymi',
+                    description: 'Plan opiekuńczo-wychowawczo-edukacyjny zawiera przemyślane wskazówki metodyczne wspierające kształtowanie u dzieci poczucia przynależności do wspólnoty grupowej oraz wrażliwości społecznej i zainteresowania drugim człowiekiem, co stanowi fundament rozwoju kompetencji społecznych i empatii',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-przyn-2',
                     title: 'Aktywności wspierające autonomię - podejmowanie decyzji',
-                    description: 'W planie są zawarte aktywności wspierające rozwój autonomii dzieci przez umożliwienie dzieciom podejmowania decyzji w sprawach ich dotyczących',
+                    description: 'Plan zawiera aktywności umożliwiające dzieciom doświadczanie sprawczości poprzez podejmowanie decyzji w sprawach ich dotyczących (na miarę ich możliwości rozwojowych), co buduje poczucie kompetencji, autonomii oraz kształtuje zdolność do samodzielnego myślenia i odpowiedzialności za własne wybory',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-przyn-3',
                     title: 'Aktywności wspierające autonomię - zwiększanie samodzielności',
-                    description: 'W planie są zawarte aktywności wspierające rozwój autonomii dzieci przez zwiększanie samodzielności dzieci',
+                    description: 'Plan obejmuje aktywności pedagogiczne systematycznie rozwijające samodzielność dzieci w codziennych czynnościach, zgodnie z zasadą „pomóż mi zrobić to samemu", co wspiera rozwój umiejętności praktycznych, pewności siebie oraz poczucia własnej wartości i kompetencji',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-przyn-4',
                     title: 'Zadania wspierające współpracę dzieci w grupie',
-                    description: 'W planie są opisane zadania personelu wspierające współpracę i komunikację dzieci w grupie',
+                    description: 'Plan precyzuje działania pedagogiczne ukierunkowane na wspieranie współdziałania i komunikacji dzieci w grupie, rozwijające umiejętności społeczne, takie jak dzielenie się, naprzemienność, negocjowanie oraz rozwiązywanie konfliktów z pomocą dorosłego',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-przyn-5',
                     title: 'Celebrowanie świąt i ważnych wydarzeń',
-                    description: 'Plan przyjęty przez instytucję opieki przewiduje celebrowanie świąt i innych ważnych wydarzeń',
+                    description: 'Plan przewiduje świadome, dostosowane do możliwości percepcyjnych dzieci celebrowanie świąt i znaczących wydarzeń, co wzbogaca doświadczenia kulturowe dzieci, buduje poczucie przynależności do wspólnoty oraz tworzy pozytywne wspomnienia i tradycje grupowe',
                     type: 'during',
                     required: true
                   }
@@ -292,35 +292,35 @@
                   {
                     id: 'dr-pd-pozn-1',
                     title: 'Wskazówki metodyczne - poznawanie świata',
-                    description: 'W planie są spisane wskazówki metodyczne dla personelu sprzyjające poznawaniu i doświadczaniu otaczającego świata przez dzieci',
+                    description: 'Plan zawiera przemyślane wskazówki metodyczne dla personelu, ukierunkowane na wspieranie naturalnej ciekawości poznawczej dziecka i jego wrodzonej potrzeby badania otoczenia, co sprzyja rozwojowi myślenia, konstruowaniu wiedzy o świecie oraz kształtowaniu postawy badacza i odkrywcy',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-pozn-2',
                     title: 'Aktywności - myślenie przyczynowo-skutkowe',
-                    description: 'W planie zostały zawarte aktywności wspierające myślenie przyczynowo-skutkowe',
+                    description: 'Plan obejmuje aktywności rozwijające myślenie przyczynowo-skutkowe dziecka poprzez dostarczanie doświadczeń umożliwiających odkrywanie związków i zależności (co się stanie gdy...), co stanowi fundament rozumienia logiki świata i rozwoju struktur poznawczych',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-pozn-3',
                     title: 'Aktywności - umiejętność obserwacji',
-                    description: 'W planie zawarte są aktywności wspierające umiejętność obserwacji i doświadczanie otaczającego świata',
+                    description: 'Plan zawiera aktywności kształtujące umiejętność uważnej obserwacji oraz wielozmysłowego doświadczania rzeczywistości, co rozwija percepcję, koncentrację uwagi, zdolność dostrzegania szczegółów oraz konstruowania własnej wiedzy poprzez bezpośrednie doświadczenie',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-pozn-4',
                     title: 'Aktywności - używanie określeń dla cech przedmiotów',
-                    description: 'W planie zawarte są aktywności wspierające używanie określeń dla cech przedmiotów',
+                    description: 'Plan obejmuje aktywności wspierające wzbogacanie słownictwa dzieci o określenia opisujące cechy przedmiotów (kolory, kształty, faktury, wielkości), co rozwija nie tylko język, ale także umiejętności kategoryzowania, porównywania i precyzyjnego opisywania rzeczywistości',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-pozn-5',
                     title: 'Aktywności - używanie określeń przestrzennych',
-                    description: 'W planie zawarte są aktywności wspierające używanie określeń przestrzennych',
+                    description: 'Plan zawiera aktywności rozwijające orientację przestrzenną dzieci oraz bogacące ich zasób pojęć przestrzennych (na, pod, obok, za), co wspiera rozwój myślenia matematycznego, koordynacji wzrokowo-przestrzennej oraz umiejętności poruszania się i organizacji otoczenia',
                     type: 'during',
                     required: true
                   }
@@ -332,42 +332,42 @@
                   {
                     id: 'dr-pd-mow-1',
                     title: 'Wskazówki metodyczne - mówienie do dzieci',
-                    description: 'W planie są spisane wskazówki metodyczne wspierające rozwój gotowości i umiejętności porozumiewania się, z uwzględnieniem mówienia do dzieci',
+                    description: 'Plan zawiera wskazówki metodyczne dotyczące jakości mowy skierowanej do dzieci, uwzględniające znaczenie bogatego języka, dostosowanego tempa wypowiedzi, prawidłowej artykulacji oraz emocjonalnego zabarwienia komunikatów werbalnych jako fundamentu rozwoju języka i myślenia dziecka',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-mow-2',
                     title: 'Wskazówki metodyczne - aktywne słuchanie',
-                    description: 'W planie są spisane wskazówki metodyczne z uwzględnieniem aktywnego słuchania dzieci',
+                    description: 'Plan precyzuje zasady aktywnego słuchania dzieci przez personel, uwzględniające pełną uwagę, cierpliwość, kontakt wzrokowy oraz responsywność na komunikaty werbalne i niewerbalne dziecka, co buduje poczucie bycia ważnym, słuchanym oraz motywuje do dalszych prób komunikacji',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-mow-3',
                     title: 'Wskazówki metodyczne - wzbogacanie słownictwa',
-                    description: 'W planie są spisane wskazówki metodyczne z uwzględnieniem wzbogacania słownictwa dzieci',
+                    description: 'Plan określa strategie systematycznego wzbogacania zasobu słownictwa dzieci poprzez nazywanie przedmiotów, czynności, cech i emocji w naturalnych sytuacjach, wykorzystanie literatury dziecięcej oraz świadome modelowanie bogatego języka przez dorosłego jako wzorca komunikacyjnego',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-mow-4',
                     title: 'Aktywności - rozmowy z dziećmi',
-                    description: 'W planie zostały zawarte aktywności obejmujące rozmowy z dziećmi',
+                    description: 'Plan zawiera aktywności zakładające prowadzenie rzeczywistych, wartościowych rozmów z dziećmi, nie ograniczających się do poleceń czy pytań zamkniętych, lecz otwierających przestrzeń do dialogu, dzielenia się myślami oraz budowania umiejętności konwersacyjnych i myślenia werbalnego',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-mow-5',
                     title: 'Aktywności - komunikowanie się dzieci',
-                    description: 'W planie zawarte są aktywności wspierające komunikowanie się dzieci ze sobą oraz personelem',
+                    description: 'Plan obejmuje aktywności wspierające rozwój umiejętności komunikacyjnych dzieci w relacjach z rówieśnikami i dorosłymi, uwzględniające zarówno komunikację werbalną, jak i niewerbalną, rozwijające zdolność wyrażania potrzeb, emocji, myśli oraz rozumienia komunikatów innych',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-mow-6',
                     title: 'Aktywności - wspólne czytanie i słuchanie',
-                    description: 'W planie zawarte są aktywności wspierające aktywny udział dzieci we wspólnym czytaniu, słuchaniu tekstów, utworów, książek',
+                    description: 'Plan przewiduje regularne, dialogowe czytanie literatury dziecięcej oraz słuchanie różnorodnych tekstów, co rozwija kompetencje językowe, wyobraźnię, rozumienie narracji, motywację do uczenia się czytania oraz buduje pozytywną relację z książką i kulturą słowa',
                     type: 'during',
                     required: true
                   }
@@ -379,56 +379,56 @@
                   {
                     id: 'dr-pd-fiz-1',
                     title: 'Wskazówki metodyczne - rozwój małej motoryki',
-                    description: 'W planie są spisane wskazówki metodyczne wspierające rozwój sprawności dzieci w zakresie małej motoryki',
+                    description: 'Plan zawiera wskazówki metodyczne wspierające rozwój precyzyjnych ruchów dłoni i palców poprzez manipulację różnorodnymi przedmiotami, co stanowi fundament przyszłych umiejętności grafomotorycznych, samoobsługowych oraz ogólnego rozwoju intelektualnego dziecka',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-fiz-2',
                     title: 'Wskazówki metodyczne - rozwój percepcji zmysłowej',
-                    description: 'W planie są spisane wskazówki metodyczne wspierające rozwój percepcji zmysłowej dzieci',
+                    description: 'Plan określa sposoby wspierania rozwoju wszystkich zmysłów dziecka (wzroku, słuchu, dotyku, węchu, smaku, czucia proprioceptywnego), co umożliwia budowanie bogatych, wielomodalnych reprezentacji rzeczywistości oraz stanowi podstawę uczenia się poprzez doświadczenie zmysłowe',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-fiz-3',
                     title: 'Wskazówki metodyczne - rozwój dużej motoryki',
-                    description: 'W planie są spisane wskazówki metodyczne wspierające rozwój sprawności dzieci w zakresie dużej motoryki',
+                    description: 'Plan zawiera wskazówki metodyczne dotyczące wspierania rozwoju motoryki dużej poprzez różnorodne formy aktywności ruchowej, uwzględniając znaczenie ruchu dla rozwoju mózgu, regulacji emocji, budowania siły mięśniowej, koordynacji oraz poczucia własnych możliwości fizycznych',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-fiz-4',
                     title: 'Aktywności - zabawy angażujące zmysły',
-                    description: 'W planie zawarte są aktywności: zabawy angażujące zmysły: wzroku, słuchu, węchu, dotyku, smaku',
+                    description: 'Plan obejmuje zabawy sensoryczne stymulujące wszystkie zmysły dziecka (wzrok, słuch, węch, dotyk, smak), dostarczając bogatych doświadczeń zmysłowych niezbędnych dla integracji sensorycznej, rozwoju poznawczego oraz budowania schematów percepcyjnych rzeczywistości',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-fiz-5',
                     title: 'Aktywności - zabawy wspierające motorykę małą',
-                    description: 'W planie zawarte są zabawy wspierające rozwój motoryki małej',
+                    description: 'Plan przewiduje różnorodne zabawy rozwijające precyzję ruchów małych mięśni dłoni (nawlekanie, przesypywanie, składanie, lepienie), co przygotowuje dziecko do nabywania umiejętności samoobsługowych oraz grafomotorycznych niezbędnych w przyszłej edukacji',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-fiz-6',
                     title: 'Aktywności - ćwiczenie koordynacji',
-                    description: 'W planie zawarte są aktywności: ćwiczenie koordynacji wzrokowo-ruchowej i równowagi',
+                    description: 'Plan zawiera aktywności systematycznie rozwijające koordynację wzrokowo-ruchową oraz równowagę, co ma fundamentalne znaczenie dla nabywania nowych umiejętności ruchowych, bezpiecznego poruszania się w przestrzeni oraz ogólnego rozwoju neuromotorycznego dziecka',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-fiz-7',
                     title: 'Aktywności - zabawy wspierające czucie głębokie',
-                    description: 'W planie zawarte są zabawy wspierające czucie głębokie oraz kształtujące schemat własnego ciała',
+                    description: 'Plan obejmuje zabawy wspierające rozwój propriocepcji (czucia głębokiego) oraz budowanie świadomego schematu własnego ciała, co umożliwia dziecku rozumienie pozycji i ruchu własnego ciała w przestrzeni oraz stanowi podstawę sprawności ruchowej i samoregulacji',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-fiz-8',
                     title: 'Aktywności - duża motoryka i zabawy na powietrzu',
-                    description: 'W planie zawarte są aktywności w zakresie dużej motoryki ze szczególnym uwzględnieniem zabaw na powietrzu',
+                    description: 'Plan przewiduje codzienne, różnorodne aktywności ruchowe, ze szczególnym uwzględnieniem zabaw na świeżym powietrzu, co odpowiada na naturalną potrzebę ruchu małego dziecka, wspiera zdrowie, odporność oraz harmonijny rozwój psychofizyczny w kontakcie z naturą',
                     type: 'during',
                     required: true
                   }
@@ -440,35 +440,35 @@
                   {
                     id: 'dr-pd-kult-1',
                     title: 'Wskazówki metodyczne - działania twórcze',
-                    description: 'W planie są spisane wskazówki metodyczne oraz niezbędne warunki umożliwiające dzieciom działania twórcze',
+                    description: 'Plan określa wskazówki metodyczne oraz warunki środowiskowe sprzyjające swobodnej ekspresji twórczej dzieci, uwzględniając wartość procesu twórczego nad efektem końcowym, co wspiera rozwój wyobraźni, odwagi twórczej, ekspresji emocjonalnej oraz budowania pozytywnej samooceny',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-kult-2',
                     title: 'Wskazówki metodyczne - dostęp do wytworów kultury',
-                    description: 'W planie są spisane wskazówki metodyczne oraz niezbędne warunki umożliwiające dostęp do wytworów kultury',
+                    description: 'Plan zawiera wskazówki dotyczące udostępniania dzieciom różnorodnych wytworów kultury i sztuki (muzyka, malarstwo, rzeźba, literatura) dostosowanych do ich możliwości percepcyjnych, co wzbogaca doświadczenia estetyczne, rozwija wrażliwość artystyczną oraz wprowadza w świat dziedzictwa kulturowego',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-kult-3',
                     title: 'Działania - wyrażanie twórczej ekspresji w różnych formach',
-                    description: 'W planie zawarte są działania personelu zachęcające dzieci do wyrażania twórczej ekspresji w różnych formach',
+                    description: 'Plan obejmuje działania pedagogiczne zachęcające dzieci do wyrażania siebie poprzez różnorodne formy ekspresji (plastyczną, muzyczną, ruchową, dramatyczną), co pozwala każdemu dziecku znaleźć własny sposób komunikowania wewnętrznych przeżyć, myśli i emocji',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-kult-4',
                     title: 'Działania - wykorzystywanie różnorodnych materiałów',
-                    description: 'W planie zawarte są działania zachęcające do wyrażania twórczej ekspresji przez umożliwienie dzieciom wykorzystywania różnorodnych materiałów',
+                    description: 'Plan przewiduje udostępnianie dzieciom bogatej gamy materiałów o różnych właściwościach (plastycznych, naturalnych, nietypowych), co stymuluje eksperymentowanie, odkrywanie możliwości twórczych oraz rozwija kreatywność, elastyczność myślenia i odwagę w podejmowaniu nowych wyzwań',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-kult-5',
                     title: 'Działania - poznawanie różnych wytworów kultury',
-                    description: 'W planie zawarte są działania personelu zachęcające dzieci do poznawania różnych wytworów kultury',
+                    description: 'Plan zawiera działania wprowadzające dzieci w świat różnorodnych wytworów kultury (muzyka różnych gatunków, obrazy, rzeźby, architektura, tradycje), co rozwija kompetencje kulturowe, wrażliwość estetyczną oraz otwartość na bogactwo i różnorodność dziedzictwa ludzkości',
                     type: 'during',
                     required: true
                   }
@@ -480,14 +480,14 @@
                   {
                     id: 'dr-pd-plan-1',
                     title: 'Personel pracuje realizując plan',
-                    description: 'Personel pracuje z dziećmi, realizując plan opiekuńczo-wychowawczo-edukacyjny',
+                    description: 'Personel prowadzi pracę pedagogiczną w oparciu o zatwierdzony plan opiekuńczo-wychowawczo-edukacyjny, traktując go jako żywy dokument stanowiący kompas działań, ale pozostawiając przestrzeń na elastyczność i responsywność wobec aktualnych potrzeb, zainteresowań i sytuacji życiowych dzieci',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-pd-plan-2',
                     title: 'Plan jest rokrocznie analizowany i dostosowywany',
-                    description: 'Plan opiekuńczo-wychowawczo-edukacyjny jest rokrocznie analizowany i dostosowywany do możliwości instytucji opieki oraz potrzeb dzieci, które do niej aktualnie uczęszczają',
+                    description: 'Plan opiekuńczo-wychowawczo-edukacyjny podlega corocznej refleksyjnej ewaluacji i modyfikacji w odpowiedzi na zmieniającą się specyfikę grupy, nabyte doświadczenia oraz rozwój wiedzy pedagogicznej, co świadczy o kulturze uczenia się organizacji oraz dążeniu do ciągłego podnoszenia jakości pracy',
                     type: 'during',
                     required: true
                   }
@@ -504,105 +504,105 @@
                   {
                     id: 'dr-op-kwal-1',
                     title: 'Zasady organizacji - udział w spotkaniach wewnętrznych',
-                    description: 'W instytucji opieki są spisane zasady organizacji pracy, umożliwiające personelowi udział w wewnętrznych spotkaniach',
+                    description: 'Organizacja pracy placówki zapewnia personelowi chroniony czas na regularne spotkania zespołowe, niezbędne dla refleksyjnej praktyki, wymiany doświadczeń, budowania wspólnego języka pedagogicznego oraz spójności działań na rzecz dzieci',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-2',
                     title: 'Zasady organizacji - udział w szkoleniach',
-                    description: 'Zasady umożliwiają personelowi udział w szkoleniach wewnętrznych lub zewnętrznych',
+                    description: 'Organizacja pracy umożliwia personelowi systematyczne uczestnictwo w szkoleniach wewnętrznych i zewnętrznych, co świadczy o uznaniu znaczenia ciągłego rozwoju profesjonalnego dla jakości opieki oraz o kulturze organizacji uczącej się',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-3',
                     title: 'Zasady organizacji - przeprowadzanie samooceny',
-                    description: 'Zasady umożliwiają personelowi przeprowadzanie samooceny swojej pracy',
+                    description: 'Organizacja pracy stwarza warunki do systematycznej autorefleksji i samooceny praktyki pedagogicznej, co stanowi fundament profesjonalnego rozwoju, świadomego doskonalenia kompetencji oraz kultury refleksyjnego praktyka',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-4',
                     title: 'Zasady organizacji - omawianie i planowanie pracy',
-                    description: 'Zasady umożliwiają personelowi omawianie i planowanie pracy w ramach planu opiekuńczo-wychowawczo-edukacyjnego',
+                    description: 'Organizacja pracy zapewnia personelowi czas na wspólne planowanie i omawianie działań edukacyjnych, co umożliwia spójną realizację planu, wymianę pomysłów, wzajemne wspieranie się oraz budowanie kultury współpracy i partnerstwa w zespole',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-5',
                     title: 'Zasady organizacji - komunikowanie się z rodzicami',
-                    description: 'Zasady umożliwiają personelowi komunikowanie się z rodzicami',
+                    description: 'Organizacja pracy zabezpiecza czas niezbędny do jakościowej, dwukierunkowej komunikacji z rodzicami, uznając relację z rodzicem za kluczowy element pracy pedagoga oraz warunek skutecznego wspierania rozwoju dziecka',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-6',
                     title: 'Zasady organizacji - monitorowanie rozwoju dziecka',
-                    description: 'Zasady umożliwiają personelowi monitorowanie rozwoju dziecka zgodnie z ustalonym w instytucji opieki systemem',
+                    description: 'Organizacja pracy umożliwia personelowi systematyczne, uważne obserwowanie i dokumentowanie postępów rozwojowych każdego dziecka zgodnie z przyjętym systemem, co pozwala na indywidualizację oddziaływań oraz świadome wspieranie dziecka w jego unikalnej ścieżce rozwoju',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-7',
                     title: 'Procedura wdrażania nowych pracowników',
-                    description: 'W instytucji opieki jest spisana procedura wdrażania nowych pracowników',
+                    description: 'Placówka dysponuje przemyślaną procedurą wdrażania nowych członków zespołu, zapewniającą systematyczne wprowadzenie w filozofię pracy, procedury oraz kulturę placówki, co sprzyja jakości opieki, spójności działań oraz poczuciu bezpieczeństwa zarówno u nowego pracownika, jak i dzieci',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-8',
                     title: 'Sposób nadzoru - obserwacje zajęć',
-                    description: 'W instytucji opieki jest opisany sposób nadzoru realizacji planu, uwzględniający obserwacje zajęć z dziećmi',
+                    description: 'System nadzoru pedagogicznego obejmuje uważne, nieoceniające obserwacje pracy pedagogów z dziećmi, stanowiące podstawę konstruktywnej informacji zwrotnej oraz wspólnej refleksji nad praktyką, co służy rozwojowi profesjonalnemu i jakości oddziaływań',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-9',
                     title: 'Sposób nadzoru - informacja zwrotna',
-                    description: 'Sposób nadzoru uwzględnia przekazywanie personelowi informacji zwrotnej na temat pracy z dziećmi',
+                    description: 'System nadzoru przewiduje systematyczne przekazywanie personelowi wartościowej, konkretnej i wspierającej informacji zwrotnej na temat pracy z dziećmi, opartej na obserwacji i dialogu, co sprzyja refleksji, uczeniu się z praktyki oraz budowaniu kultury zaufania i współpracy',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-10',
                     title: 'Sposób nadzoru - samoocena pracy personelu',
-                    description: 'Sposób nadzoru uwzględnia samoocenę pracy personelu z wykorzystaniem przygotowanych arkuszy lub kwestionariuszy',
+                    description: 'System nadzoru włącza narzędzia autoewaluacji (arkusze, kwestionariusze) umożliwiające personelowi systematyczną refleksję nad własną praktyką, co rozwija świadomość zawodową, autonomię profesjonalną oraz kulturę ciągłego uczenia się i doskonalenia',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-11',
                     title: 'System szkoleń (min. 10h/rok) - zasady doboru tematyki',
-                    description: 'W instytucji opieki jest opracowany system organizacji i realizacji szkoleń (min. 10h rocznie), obejmujący zasady doboru tematyki szkoleniowej',
+                    description: 'Placówka posiada przemyślany system organizacji szkoleń (minimum 10 godzin rocznie), z jasnymi zasadami doboru tematyki odpowiadającej na zidentyfikowane potrzeby rozwojowe personelu oraz priorytetowe cele jakościowe placówki',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-12',
                     title: 'System szkoleń - zasady uczestnictwa',
-                    description: 'System szkoleń obejmuje zasady uczestnictwa personelu w szkoleniach',
+                    description: 'System szkoleń określa przejrzyste, sprawiedliwe zasady uczestnictwa personelu w działaniach rozwojowych, zapewniając równe szanse doskonalenia zawodowego oraz demokratyczny dostęp do możliwości podnoszenia kwalifikacji',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-13',
                     title: 'System komunikacji wewnętrznej - zasady etyczne',
-                    description: 'W instytucji opieki jest opracowany system wewnętrznej komunikacji zawierający zasady etyczne w relacjach personel–personel',
+                    description: 'Placówka wypracowała system wewnętrznej komunikacji oparty na jasnych zasadach etycznych (szacunek, lojalność, dyskrecja, uczciwość), co buduje kulturę zaufania, bezpieczeństwa psychologicznego oraz konstruktywnych relacji zawodowych w zespole',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-14',
                     title: 'System komunikacji - droga rozwiązywania konfliktów',
-                    description: 'System komunikacji zawiera ustaloną drogę rozwiązywania konfliktów między personelem',
+                    description: 'System komunikacji określa konstruktywną, przejrzystą ścieżkę rozwiązywania konfliktów między członkami personelu, traktując je jako naturalny element życia organizacji oraz okazję do uczenia się i doskonalenia współpracy',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-kwal-15',
                     title: 'System komunikacji - sposoby wymiany informacji',
-                    description: 'System komunikacji zawiera sposoby wzajemnej wymiany informacji na temat pracy',
+                    description: 'System komunikacji precyzuje efektywne kanały i formy wymiany informacji o pracy, zapewniając przepływ wiedzy, koordynację działań oraz budowanie wspólnego rozumienia celów i metod pracy na rzecz dzieci',
                     type: 'during',
                     required: true
                   }
@@ -614,56 +614,56 @@
                   {
                     id: 'dr-op-bezp-1',
                     title: 'Zobowiązanie do kodeksu etycznego',
-                    description: 'Personel podpisał zobowiązanie do respektowania kodeksu etycznego',
+                    description: 'Każdy członek personelu złożył pisemne zobowiązanie do przestrzegania kodeksu etycznego placówki, co świadczy o świadomym przyjęciu odpowiedzialności za najwyższe standardy etyczne w pracy z małym dzieckiem oraz o kulturze profesjonalizmu i szacunku dla godności dziecka',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-bezp-2',
                     title: 'Zapoznanie z procedurami przyjmowania i wydawania dzieci',
-                    description: 'Personel jest zapoznany z procedurami przyjmowania i wydawania dzieci oraz zasadami obecności osób trzecich na terenie instytucji opieki',
+                    description: 'Personel został gruntownie zapoznany z procedurami przyjmowania i odbierania dzieci oraz regulacjami dotyczącymi obecności osób trzecich, co zapewnia bezpieczeństwo fizyczne dzieci oraz chroni ich prawo do przebywania w przewidywalnym, kontrolowanym środowisku',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-bezp-3',
                     title: 'Zapoznanie z procedurami ochrony danych osobowych',
-                    description: 'Personel jest zapoznany z procedurami ochrony danych osobowych i wizerunku dzieci',
+                    description: 'Personel jest kompetentnie przeszkolony w zakresie ochrony danych osobowych i wizerunku dzieci, rozumiejąc znaczenie prywatności oraz praw rodziny, co buduje zaufanie rodziców oraz zapewnia zgodność z przepisami o ochronie danych osobowych (RODO)',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-bezp-4',
                     title: 'Zapoznanie z procedurami zapobiegania wypadkom',
-                    description: 'Personel jest zapoznany z procedurami zapobiegania wypadkom i postępowania w sytuacji wypadku',
+                    description: 'Personel został przeszkolony w zakresie profilaktyki wypadków oraz postępowania w sytuacjach zagrożenia, łącząc wiedzę o bezpieczeństwie z umiejętnością tworzenia środowiska umożliwiającego dzieciom podejmowanie wyzwań ruchowych w kontrolowanych, bezpiecznych warunkach',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-bezp-5',
                     title: 'Zapoznanie z zasadami postępowania w przypadku choroby',
-                    description: 'Personel jest zapoznany z zasadami postępowania w przypadku choroby dziecka',
+                    description: 'Personel zna i stosuje jasne zasady postępowania w sytuacji choroby dziecka, łącząc troskę o zdrowie całej grupy z empatycznym, ciepłym wsparciem chorego dziecka oraz komunikacją z rodzicem opartą na partnerstwie i wzajemnym zaufaniu',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-bezp-6',
                     title: 'Informacje o sposobach zgłaszania przemocy',
-                    description: 'W instytucji opieki są powszechnie dostępne informacje o sposobach zgłaszania przemocy i innych zachowań niepożądanych',
+                    description: 'Placówka zapewnia powszechnie dostępne, jasne informacje o procedurach zgłaszania przemocy i innych zachowań krzywdzących, co tworzy kulturę ochrony dziecka, odpowiedzialności każdego dorosłego oraz zerowej tolerancji dla krzywdzenia małego dziecka',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-bezp-7',
                     title: 'Indywidualny program dla dzieci o specjalnych potrzebach',
-                    description: 'W instytucji opieki tworzony jest i konsultowany z rodzicami indywidualny program pobytu dzieci o specjalnych potrzebach uwzględniający ich możliwości',
+                    description: 'Dla każdego dziecka z dodatkowymi potrzebami tworzony jest indywidualny program pobytu, opracowywany we współpracy z rodzicami i specjalistami, uwzględniający mocne strony i możliwości dziecka, co realizuje ideę inkluzji oraz prawa każdego dziecka do rozwoju we wspierającym środowisku',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-bezp-8',
                     title: 'Codzienne wychodzenie z dziećmi na zewnątrz',
-                    description: 'W planie dnia jest codzienne wychodzenie z dziećmi na zewnątrz. W wyjątkowych sytuacjach związanych z wysokim poziomem smogu lub niedogodnymi warunkami atmosferycznymi dzieciom proponuje się inne aktywności',
+                    description: 'Plan dnia przewiduje codzienne przebywanie dzieci na świeżym powietrzu jako fundamentalną potrzebę zdrowia fizycznego i psychicznego małego dziecka. W wyjątkowych sytuacjach (smog, ekstremalna pogoda) placówka zapewnia alternatywne formy aktywności ruchowej w pomieszczeniach',
                     type: 'during',
                     required: true
                   }
@@ -675,49 +675,49 @@
                   {
                     id: 'dr-op-prze-1',
                     title: 'Przestrzeń zorganizowana - co najmniej 3 strefy',
-                    description: 'Przestrzeń w instytucji opieki jest zorganizowana w sposób umożliwiający wydzielenie co najmniej trzech spośród poniższych stref zainteresowań dla dzieci: wspólnego czytania, zabaw konstrukcyjnych, zabaw ruchowych, zabaw plastycznych, zabaw z wodą i piaskiem, zabaw tematycznych, zabaw muzycznych',
+                    description: 'Przestrzeń edukacyjna placówki została celowo zorganizowana w wyraźne strefy aktywności (minimum trzy spośród: czytelniczej, konstrukcyjnej, ruchowej, plastycznej, wodno-piaskowej, tematycznej, muzycznej), co wspiera autonomiczny wybór dzieci, koncentrację uwagi oraz rozwój poprzez różnorodne formy aktywności',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-prze-2',
                     title: 'Pojemniki z materiałami oznakowane',
-                    description: 'W instytucji opieki przestrzeń zorganizowana jest w sposób wpierający autonomię dziecka: pojemniki z materiałami i zabawkami są oznakowane w sposób zrozumiały dla dzieci',
+                    description: 'Wszystkie pojemniki z materiałami i zabawkami są oznakowane w sposób zrozumiały dla małych dzieci (obrazki, symbole, zdjęcia), co wspiera rozwój samodzielności, umiejętność porządkowania, orientację w przestrzeni oraz buduje poczucie sprawczości i odpowiedzialności za otoczenie',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-prze-3',
                     title: 'Materiały i zabawki na wysokości dostępnej dla dzieci',
-                    description: 'Materiały i zabawki są usytuowane na wysokości dostępnej dla dzieci',
+                    description: 'Materiały i zabawki są usytuowane na wysokości umożliwiającej dzieciom samodzielny dostęp, co realizuje zasadę „przestrzeń dla dziecka, nie dla dorosłego", wspiera autonomię, sprawczość oraz naturalne prawo dziecka do samodzielnego wyboru aktywności zgodnie z aktualnymi zainteresowaniami',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-prze-4',
                     title: 'Miejsce na rzeczy dziecka oznaczone',
-                    description: 'Każde dziecko ma miejsce do przechowywania swoich rzeczy oznaczone w sposób widoczny i zrozumiały dla dziecka',
+                    description: 'Każde dziecko posiada własne, wyraźnie oznaczone (imieniem, zdjęciem, symbolem) miejsce na rzeczy osobiste, co buduje poczucie przynależności, bezpieczeństwa, szacunku dla własności oraz wspiera rozwój tożsamości i poczucia „mojego miejsca" w placówce',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-prze-5',
                     title: 'Woda do picia zawsze dostępna',
-                    description: 'W pomieszczeniach, w których przebywają dzieci, zawsze dostępna jest dla nich woda do picia w każdym momencie w ciągu dnia',
+                    description: 'Świeża woda pitna jest stale dostępna dla dzieci w każdym pomieszczeniu, w którym przebywają, co realizuje podstawową potrzebę fizjologiczną, wspiera zdrowe nawyki, rozwija samodzielność oraz uczy słuchania sygnałów własnego ciała',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-prze-6',
                     title: 'Brak muzyki/radia jako stałego tła',
-                    description: 'W pomieszczeniach dla dzieci nie używa się muzyki lub radia jako stałego tła akustycznego',
+                    description: 'Placówka świadomie rezygnuje z muzyki lub radia jako stałego tła akustycznego, chroniąc dzieci przed nadmierną stymulacją słuchową, wspierając koncentrację uwagi, jakość interakcji werbalnych oraz respektując potrzebę ciszy i naturalnych dźwięków otoczenia',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-op-prze-7',
                     title: 'Naturalne materiały i przedmioty codziennego użytku',
-                    description: 'Wśród materiałów dostępnych dla dzieci w pomieszczeniach i na zewnątrz znajdują się naturalne materiały i przedmioty codziennego użytku',
+                    description: 'Wśród dostępnych dzieciom materiałów znajdują się naturalne elementy (drewno, kamienie, szyszki, tkaniny) oraz autentyczne przedmioty codziennego użytku, co wzbogaca doświadczenia sensoryczne, buduje więź z naturą, rozwija wyobraźnię oraz wprowadza w świat realnych funkcji i znaczeń',
                     type: 'during',
                     required: true
                   }
@@ -729,7 +729,7 @@
                   {
                     id: 'dr-op-adapt-1',
                     title: 'Wyznaczone osoby odpowiedzialne za adaptację',
-                    description: 'Wśród personelu są wyznaczone osoby odpowiedzialne za realizację etapów procesu adaptacji: zapoznanie rodziców z zasadami i procedurami, poinformowanie rodziców jak przygotować dziecko, zebranie informacji o przyzwyczajeniach dziecka',
+                    description: 'Placówka wyznaczyła konkretne osoby odpowiedzialne za koordynację procesu adaptacji (zapoznanie rodziców z placówką, wspieranie przygotowania dziecka, gromadzenie informacji o nawykach dziecka), co zapewnia profesjonalną, spójną realizację tego kluczowego momentu oraz buduje zaufanie rodziny do placówki',
                     type: 'during',
                     required: true
                   }
@@ -746,49 +746,49 @@
                   {
                     id: 'dr-wr-wsp-1',
                     title: 'System informowania rodziców o realizacji planu',
-                    description: 'Instytucja opieki ma określony system informowania rodziców o realizacji planu opiekuńczo-wychowawczo-edukacyjnego za pomocą przynajmniej jednego kanału informacji',
+                    description: 'Placówka posiada usystematyzowany sposób informowania rodziców o realizacji planu opiekuńczo-wychowawczo-edukacyjnego (minimum jeden kanał komunikacji), co buduje transparentność działań, umożliwia rodzicom rozumienie sensu codziennych aktywności oraz wspiera spójność oddziaływań między domem a placówką',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-wr-wsp-2',
                     title: 'Spotkania grupowe z rodzicami minimum raz w roku',
-                    description: 'Personel organizuje spotkania grupowe z rodzicami minimum raz do roku',
+                    description: 'Personel organizuje spotkania grupowe z rodzicami minimum raz w roku, traktując je jako przestrzeń budowania wspólnoty wychowawczej, wymiany doświadczeń między rodzinami oraz dialogu na temat wartości i celów przyświecających pracy z dziećmi',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-wr-wsp-3',
                     title: 'Informowanie o spotkaniach z 2-tygodniowym wyprzedzeniem',
-                    description: 'Rodzice są informowani o planowanych spotkaniach (indywidualnych i grupowych) z co najmniej dwutygodniowym wyprzedzeniem',
+                    description: 'Rodzice otrzymują informacje o planowanych spotkaniach z co najmniej dwutygodniowym wyprzedzeniem, co wyraża szacunek dla ich czasu, umożliwia zaplanowanie obecności oraz świadczy o profesjonalnej organizacji współpracy z rodzinami',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-wr-wsp-4',
                     title: 'Sposób składania wniosków, uwag lub skarg',
-                    description: 'Określony jest sposób umożliwiający rodzicom składanie wniosków, uwag lub skarg',
+                    description: 'Placówka zapewnia przejrzysty, przyjazny sposób składania przez rodziców wniosków, uwag lub skarg, traktując ich głos jako cenny wkład w doskonalenie jakości pracy oraz wyraz partnerstw w trosce o dobro dziecka',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-wr-wsp-5',
                     title: 'Badanie satysfakcji rodziców (min. raz w roku)',
-                    description: 'Co najmniej raz w roku jest dokonywane badanie satysfakcji rodziców dotyczące panującej atmosfery i relacji rodziców z personelem instytucji opieki',
+                    description: 'Placówka regularnie (minimum raz w roku) bada satysfakcję rodziców z atmosfery placówki i relacji z personelem, traktując ich opinię jako istotne źródło informacji o jakości pracy oraz fundament kultury ciągłego doskonalenia i responsywności na potrzeby rodzin',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-wr-wsp-6',
                     title: 'Wyniki badania uwzględniane w modyfikacji pracy',
-                    description: 'Wyniki badania satysfakcji rodziców są uwzględniane w modyfikacji pracy instytucji opieki',
+                    description: 'Wyniki badania satysfakcji rodziców są systematycznie analizowane i przekładane na konkretne działania doskonalące pracę placówki, co świadczy o kulturze uczenia się z informacji zwrotnej oraz autentycznym partnerstwie z rodzinami w kształtowaniu jakości opieki',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-wr-wsp-7',
                     title: 'Plan podlega konsultacjom z rodzicami',
-                    description: 'Plan opiekuńczo-wychowawczo-edukacyjny podlega konsultacjom z rodzicami dzieci, a w przypadku gdy w żłobku lub klubie dziecięcym została utworzona rada rodziców – z tą radą',
+                    description: 'Plan opiekuńczo-wychowawczo-edukacyjny jest konsultowany z rodzicami (lub radą rodziców), co realizuje zasadę partycypacji rodzin w ważnych decyzjach dotyczących edukacji ich dzieci oraz buduje poczucie współodpowiedzialności za filozofię i kierunek pracy placówki',
                     type: 'during',
                     required: true
                   }
@@ -800,28 +800,28 @@
                   {
                     id: 'dr-wr-wlacz-1',
                     title: 'Lista spraw konsultowanych z rodzicami',
-                    description: 'W instytucji opieki jest spisana lista spraw, w których decyzje są konsultowane z rodzicami lub radą rodziców, oraz spraw, w których decyzje są podejmowane wspólnie z rodzicami',
+                    description: 'Placówka określiła jasny katalog spraw konsultowanych z rodzicami oraz podejmowanych wspólnie, co konkretyzuje zasadę partycypacji, buduje poczucie współodpowiedzialności za placówkę oraz realizuje prawo rodziców do realnego wpływu na funkcjonowanie instytucji wychowującej ich dzieci',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-wr-wlacz-2',
                     title: 'Co najmniej 3 formy uczestnictwa rodziców',
-                    description: 'Są określone co najmniej trzy formy uczestnictwa rodziców w życiu instytucji opieki',
+                    description: 'Placówka stworzyła różnorodne formy zaangażowania rodziców w życie placówki (minimum trzy formy), uwzględniając zróżnicowane możliwości czasowe i preferencje rodzin, co sprzyja budowaniu wspólnoty, wzbogaca doświadczenia dzieci oraz wzmacnia więzi między wszystkimi członkami społeczności placówki',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-wr-wlacz-3',
                     title: 'Miejsce na informacje dla innych rodziców',
-                    description: 'Rodzice mają miejsce, w którym mogą zostawiać informacje dla innych rodziców',
+                    description: 'Placówka zapewnia rodzicom wydzielone miejsce (tablica, folder, platforma) do wymiany informacji między sobą, co sprzyja budowaniu nieformalnych relacji między rodzinami, tworzeniu sieci wsparcia oraz kształtowaniu poczucia wspólnoty wykraczającej poza relację rodzic-placówka',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-wr-wlacz-4',
                     title: 'Zasady przebywania rodziców na terenie',
-                    description: 'Są określone zasady przebywania rodziców na terenie instytucji opieki, obejmujące zasady poruszania się rodziców w pomieszczeniach i na zewnątrz',
+                    description: 'Placówka określiła przejrzyste zasady przebywania rodziców na terenie placówki (w pomieszczeniach i na zewnątrz), łącząc otwartość i zapraszanie rodzin do uczestnictwa z troską o bezpieczeństwo dzieci oraz komfort pracy pedagogicznej',
                     type: 'during',
                     required: true
                   }
@@ -833,28 +833,28 @@
                   {
                     id: 'dr-wr-komp-1',
                     title: 'Materiały edukacyjne o wychowaniu bez przemocy',
-                    description: 'Instytucja opieki udostępnia rodzicom materiały edukacyjne w zakresie wychowania dzieci bez przemocy oraz ochrony ich przed przemocą i wykorzystywaniem',
+                    description: 'Placówka udostępnia rodzicom rzetelne, zrozumiałe materiały edukacyjne o wychowaniu bez przemocy oraz ochronie dzieci przed krzywdzeniem, wspierając rozwój kompetencji rodzicielskich opartych na szacunku, empatii i rozumieniu potrzeb rozwojowych małego dziecka',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-wr-komp-2',
                     title: 'Materiały informacyjne o standardach ochrony małoletnich',
-                    description: 'Instytucja opieki udostępnia rodzicom materiały informacyjne dotyczące standardów ochrony małoletnich',
+                    description: 'Placówka zapewnia rodzicom dostęp do materiałów o standardach ochrony małoletnich, budując wspólne rozumienie praw dziecka, kultury bezpieczeństwa oraz odpowiedzialności każdego dorosłego za godne, wolne od przemocy dzieciństwo',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-wr-komp-3',
                     title: 'Wsparcie w nawiązaniu kontaktów ze specjalistami',
-                    description: 'Instytucja opieki wspiera rodziców w nawiązaniu kontaktów ze specjalistami spoza placówki',
+                    description: 'Placówka wspiera rodziców w nawiązywaniu kontaktu ze specjalistami (psycholog, logopeda, terapeuta), traktując to jako element holistycznego wsparcia rodziny oraz realizację wspólnej troski o optymalne warunki rozwoju każdego dziecka',
                     type: 'during',
                     required: true
                   },
                   {
                     id: 'dr-wr-komp-4',
                     title: 'Inne materiały dotyczące rozwoju dzieci',
-                    description: 'Instytucja opieki udostępnia rodzicom inne niż wskazane powyżej materiały dotyczące różnych aspektów rozwoju dzieci',
+                    description: 'Placówka systematycznie udostępnia rodzicom zróżnicowane, wartościowe merytorycznie materiały o różnych aspektach rozwoju dziecka, co wspiera ich wiedzę pedagogiczną, kompetencje rodzicielskie oraz buduje kulturę świadomego, refleksyjnego rodzicielstwa opartego na wiedzy o rozwoju dziecka',
                     type: 'during',
                     required: true
                   }
@@ -873,77 +873,77 @@
               {
                 id: 'opt-pd-resp-1',
                 title: 'Warunki do odpoczynku w więcej niż 2 formach',
-                description: 'Instytucja opieki stwarza dzieciom warunki do odpoczynku w pomieszczeniu w więcej niż dwóch różnych formach',
+                description: 'Placówka oferuje dzieciom bogatszy wybór form odpoczynku (więcej niż dwie), co w jeszcze większym stopniu respektuje indywidualne różnice w sposobach regeneracji sił oraz wspiera rozwój samoświadomości i umiejętności rozpoznawania własnych potrzeb',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-pd-resp-2',
                 title: 'Warunki do odpoczynku poza budynkiem',
-                description: 'Instytucja opieki stwarza dzieciom warunki do odpoczynku poza budynkiem',
+                description: 'Placówka stwarza dzieciom możliwość odpoczynku na świeżym powietrzu (hamaki, koce, leżaki ogrodowe), co wzbogaca doświadczenia sensoryczne, łączy regenerację z kontaktem z naturą oraz wprowadza zdrowe nawyki spędzania czasu na zewnątrz',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-pd-resp-3',
                 title: 'Dzieci włączane w organizację posiłków',
-                description: 'Dzieci w miarę swoich możliwości rozwojowych są włączane w organizację posiłków między innymi przez nakrywanie do stołu, odstawianie naczyń, nalewanie napoju z dzbanka do kubka',
+                description: 'Dzieci są systematycznie, na miarę możliwości rozwojowych, włączane w organizację posiłków (nakrywanie, nalewanie, sprzątanie), co rozwija samodzielność, umiejętności praktyczne, poczucie sprawczości oraz buduje pozytywny stosunek do wspólnych posiłków jako momentów integracji i współdziałania',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-pd-resp-4',
                 title: 'Dodatkowe działania - respektowanie praw dzieci',
-                description: 'Instytucja opieki podejmuje dodatkowe działania na rzecz respektowania praw dzieci w codziennej pracy instytucji opieki',
+                description: 'Placówka wykracza poza wymagania minimalne, podejmując innowacyjne działania na rzecz respektowania praw dzieci, co świadczy o głębokim zaangażowaniu w filozofię praw dziecka oraz dążeniu do bycia placówką modelową w zakresie kultury szacunku dla godności i podmiotowości małego dziecka',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-pd-rel-1',
                 title: 'Dodatkowe działania - budowanie bezpiecznych relacji',
-                description: 'Instytucja opieki podejmuje dodatkowe działania na rzecz budowania przez personel bezpiecznych, opartych na szacunku relacji z dziećmi',
+                description: 'Placówka wzbogaca swoją praktykę o dodatkowe działania wspierające jakość relacji personel-dziecko, co może obejmować superwizję, warsztaty komunikacji, trening uważności, świadcząc o szczególnym zaangażowaniu w rozwój kompetencji społeczno-emocjonalnych zespołu',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-pd-przyn-1',
                 title: 'Dodatkowe działania - poczucie przynależności',
-                description: 'Instytucja opieki podejmuje dodatkowe, wspierające rozwój poczucia przynależności i uważności na inne osoby, działania, które przyczyniają się do budowania zintegrowanej i empatycznej społeczności dzieci',
+                description: 'Placówka podejmuje ponadstandardowe działania budujące poczucie wspólnoty i empatii (projekty prospołeczne, święta różnorodności, działania integracyjne), co przyczynia się do kształtowania głęboko zintegrowanej, empatycznej społeczności dzieci oraz kultury akceptacji i szacunku dla różnic',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-pd-pozn-1',
                 title: 'Dodatkowe działania - poznawanie świata',
-                description: 'Instytucja opieki podejmuje dodatkowe, wspierające poznawanie i doświadczanie otaczającego świata, działania, które przyczyniają się do wszechstronnego rozwoju poznawczego, emocjonalnego i społecznego dzieci',
+                description: 'Placówka wzbogaca program o dodatkowe, ambitne działania edukacyjne (projekty badawcze, wycieczki edukacyjne, współpraca z instytucjami kultury), co świadczy o dążeniu do wszechstronnego rozwoju poznawczego dzieci oraz przekraczaniu standardów w stymulowaniu naturalnej ciekawości świata',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-pd-mow-1',
                 title: 'Aktywności umożliwiające kontakt z językiem obcym',
-                description: 'W instytucji opieki zapewnione są aktywności umożliwiające kontakt dzieci z językiem obcym',
+                description: 'Placówka umożliwia dzieciom naturalny, zabawowy kontakt z językiem obcym (piosenki, zabawy, codzienne frazy), co w wieku wczesnego dzieciństwa wykorzystuje wyjątkową plastyczność mózgu do nauki języków oraz rozwija wrażliwość językową i kompetencje interkulturowe',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-pd-mow-2',
                 title: 'Dodatkowe działania - rozwój komunikacyjny',
-                description: 'W odpowiedzi na aktualne zainteresowania i potrzeby dziecka instytucja opieki podejmuje dodatkowe, wspierające rozwój jego umiejętności komunikacyjnych, działania, które przyczyniają się do wszechstronnego rozwoju językowego, społecznego i emocjonalnego',
+                description: 'Placówka responsywnie wzbogaca pracę o dodatkowe działania wspierające komunikację dziecka w odpowiedzi na jego aktualne zainteresowania (np. AAC dla dzieci z opóźnionym rozwojem mowy, wzbogacone środowisko językowe), co świadczy o indywidualizacji oraz wysokiej wrażliwości na potrzeby każdego dziecka',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-pd-fiz-1',
                 title: 'Dodatkowe działania - rozwój fizyczny i sensoryczny',
-                description: 'W odpowiedzi na aktualne zainteresowania i potrzeby dziecka instytucja opieki podejmuje dodatkowe, wspierające rozwój fizyczny i sensoryczny dziecka, działania, które przyczyniają się do wszechstronnego rozwoju fizycznego, motorycznego i zmysłowego dziecka',
+                description: 'Placówka rozszerza ofertę o dodatkowe działania motoryczne i sensoryczne (joga dla dzieci, zabawy integracji sensorycznej, rytmika), dostosowane do zainteresowań i potrzeb grupy, co świadczy o holistycznym podejściu do rozwoju psychofizycznego oraz dążeniu do excellence w tym obszarze',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-pd-kult-1',
                 title: 'Dodatkowe działania - twórcza ekspresja',
-                description: 'W odpowiedzi na aktualne zainteresowania i potrzeby dziecka instytucja opieki podejmuje dodatkowe, wspierające twórczą ekspresję dziecka oraz jego kontakt z różnorodnymi wytworami kultury i sztuki, działania, które przyczyniają się do wszechstronnego rozwoju artystycznego, kulturalnego i emocjonalnego dziecka',
+                description: 'Placówka wzbogaca doświadczenia dzieci o dodatkowe formy ekspresji twórczej i kontaktu ze sztuką (warsztaty artystyczne, wizyty artystów, projekty plastyczne), responsywnie reagując na zainteresowania dzieci oraz tworząc szczególnie inspirujące środowisko kulturalne wspierające rozwój wrażliwości estetycznej',
                 type: 'optional',
                 required: false
               }
@@ -955,133 +955,133 @@
               {
                 id: 'opt-op-kwal-1',
                 title: 'System superwizyjnej pracy z personelem',
-                description: 'W instytucji opieki realizowany jest system superwizyjnej pracy z personelem',
+                description: 'Placówka wdraża profesjonalną superwizję jako formę systematycznego wsparcia personelu w radzeniu sobie z wyzwaniami pracy, refleksji nad praktyką oraz profilaktyki wypalenia zawodowego, co świadczy o najwyższych standardach zarządzania zasobami ludzkimi oraz trosce o dobrostan zespołu',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-kwal-2',
                 title: 'Dodatkowe działania - podnoszenie kwalifikacji',
-                description: 'Instytucja opieki podejmuje dodatkowe, wspierające podnoszenie kwalifikacji personelu oraz rozwój jego umiejętności zawodowych, działania, które przyczyniają się do wzrostu jakości opieki i edukacji dzieci',
+                description: 'Placówka wykracza poza obligatoryjne minimum 10 godzin szkoleń rocznie, oferując personelowi wzbogacone możliwości rozwoju zawodowego (konferencje, studia podyplomowe, mentoring), co świadczy o traktowaniu inwestycji w rozwój zespołu jako priorytetu oraz dążeniu do bycia organizacją uczącą się',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-bezp-1',
                 title: 'Dzieci mają zapasowe ubrania',
-                description: 'Dzieci mają zapasowe ubrania dostarczone przez rodziców umożliwiające im wychodzenie na zewnątrz niezależnie od pogody',
+                description: 'Dzieci dysponują kompletnymi zestawami ubrań zapasowych dostosowanych do każdej pogody, co umożliwia codzienne, niezależne od warunków atmosferycznych przebywanie na zewnątrz oraz realizuje filozofię „nie ma złej pogody, jest tylko złe ubranie", wspierając zdrowie i odporność dzieci',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-bezp-2',
                 title: 'Dodatkowe działania - bezpieczeństwo i zdrowie',
-                description: 'Instytucja opieki podejmuje dodatkowe, wspierające bezpieczeństwo i zdrowie dzieci, działania, które przyczyniają się do zapewnienia wszechstronnej opieki zdrowotnej, profilaktyki i bezpieczeństwa dzieci',
+                description: 'Placówka wdraża ponadstandardowe działania na rzecz zdrowia i bezpieczeństwa dzieci (np. program prozdrowotny, współpraca z fizjoterapeutą, monitoring jakości powietrza), co świadczy o szczególnej trosce o optymalne warunki rozwoju psychofizycznego oraz profilaktykę zdrowotną',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-prze-1',
                 title: 'Więcej niż 3 strefy w pomieszczeniach',
-                description: 'W instytucji opieki przestrzeń jest podzielona na więcej niż 3 spośród poniższych stref zainteresowań dla dzieci: wspólnego czytania, zabaw konstrukcyjnych, zabaw ruchowych, zabaw plastycznych, zabaw z wodą i piaskiem, zabaw tematycznych, zabaw muzycznych',
+                description: 'Placówka organizuje przestrzeń wewnętrzną w bogaty system stref (więcej niż trzy), co w większym stopniu wspiera zróżnicowane zainteresowania dzieci, koncentrację uwagi, autonomiczny wybór aktywności oraz tworzenie szczególnie inspirującego środowiska edukacyjnego',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-prze-2',
                 title: 'Co najmniej 3 strefy na zewnątrz',
-                description: 'Przestrzeń na zewnątrz instytucji jest podzielona w sposób umożliwiający wydzielenie co najmniej trzech spośród stref zainteresowań dla dzieci',
+                description: 'Placówka organizuje przestrzeń zewnętrzną w wyraźne strefy aktywności (minimum trzy), co wzbogaca możliwości zabaw na powietrzu, wspiera różnorodne formy aktywności ruchowej oraz tworzy inspirujące środowisko do poznawania przyrody i eksperymentowania w naturalnym otoczeniu',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-prze-3',
                 title: 'Możliwość przekształcania przestrzeni wewnątrz',
-                description: 'W instytucji opieki jest możliwość przekształcania przestrzeni w odpowiedzi na aktualne zainteresowania dzieci',
+                description: 'Placówka zaprojektowała przestrzeń wewnętrzną jako elastyczną i responsywną, umożliwiającą modyfikacje zgodnie z aktualnymi zainteresowaniami dzieci, co świadczy o podejściu traktującym przestrzeń jako „trzeciego pedagoga" oraz dążeniu do maksymalnej indywidualizacji środowiska edukacyjnego',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-prze-4',
                 title: 'Możliwość przekształcania przestrzeni na zewnątrz',
-                description: 'Przestrzeń na zewnątrz jest zorganizowana w sposób umożliwiający jej przekształcanie w odpowiedzi na aktualne zainteresowania dzieci',
+                description: 'Placówka zaprojektowała przestrzeń zewnętrzną jako elastyczną i modyfikowalną (mobilne elementy, naturalne materiały do zabaw), responsywną wobec zmieniających się zainteresowań dzieci, co wzbogaca możliwości twórczej zabawy oraz wspiera aktywną eksplorację i uczenie się w naturalnym środowisku',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-prze-5',
                 title: 'Elementy ograniczające akustyczność pomieszczenia',
-                description: 'W instytucji opieki znajdują się elementy ograniczające akustyczność pomieszczenia (poduchy, zasłony, elementy perforowane itp.)',
+                description: 'Placówka zastosowała rozwiązania architektoniczne i designerskie redukujące hałas (panele akustyczne, tkaniny, poduszki), co chroni dzieci przed nadmierną stymulacją słuchową, wspiera koncentrację uwagi, jakość komunikacji oraz tworzy środowisko sprzyjające regulacji emocjonalnej',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-prze-6',
                 title: 'Miejsce na rozmowy dorosłych bez dzieci',
-                description: 'W instytucji opieki jest miejsce, gdzie dorośli mogą porozmawiać bez obecności dzieci',
+                description: 'Placówka zapewnia wydzieloną przestrzeń dla rozmów między dorosłymi (rodziców z pedagogami, personelu), co umożliwia jakościową komunikację bez rozpraszania uwagi dzieci, sprzyja budowaniu relacji oraz świadczy o szacunku dla wartości prywatnej rozmowy dorosłych',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-prze-7',
                 title: 'Specjalne ubrania do brudnych zabaw',
-                description: 'Dzieci mają specjalne ubrania do tzw. brudnych zabaw przyniesione przez rodziców',
+                description: 'Dzieci dysponują specjalnymi ubraniami do zabaw sensorycznych i eksperymentów (farby, glina, piasek, woda), co usuwa obawy przed ubrudzeniem, pozwala na pełną swobodę eksploracji oraz wspiera filozofię uczenia się poprzez bezpośrednie, wielozmysłowe doświadczanie rzeczywistości',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-prze-8',
                 title: 'Miejsce na nieużywane materiały',
-                description: 'W instytucji opieki jest miejsce na różne nieużywane aktualnie materiały plastyczne, edukacyjne i zabawki',
+                description: 'Placówka organizuje system rotacji materiałów edukacyjnych i zabawek, posiadając magazyn na elementy obecnie nieużywane, co zapobiega nadmiernej stymulacji, umożliwia odświeżanie środowiska oraz responsywne dostosowywanie oferty do aktualnych zainteresowań i potrzeb rozwojowych dzieci',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-prze-9',
                 title: 'Regulacja natężenia światła',
-                description: 'W pomieszczeniach dla dzieci jest możliwa regulacja natężenia światła w zależności od aktualnych potrzeb dzieci',
+                description: 'Pomieszczenia wyposażone są w systemy regulacji natężenia światła (ściemniacze, zasłony, różne źródła światła), co umożliwia dostosowanie oświetlenia do aktualnych aktywności (jasne przy zabawach, przytłumione podczas odpoczynku) oraz wspiera naturalny rytm dobowy i regulację stanu pobudzenia dzieci',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-prze-10',
                 title: 'Regulacja temperatury',
-                description: 'W pomieszczeniach dla dzieci jest możliwa regulacja temperatury w zależności od aktualnych potrzeb dzieci',
+                description: 'Placówka zapewnia możliwość indywidualnej regulacji temperatury w poszczególnych pomieszczeniach, co pozwala na optymalizację komfortu termicznego dzieci, wspiera zdrowie oraz uwzględnia zróżnicowane potrzeby temperaturowe w zależności od aktywności (ruch vs odpoczynek)',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-prze-11',
                 title: 'Pastelowe kolory, unikanie różnorodności',
-                description: 'W pomieszczeniach dla dzieci dominują kolory pastelowe, unika się różnorodności w doborze kolorów i wzorów na ścianie i podłogach',
+                description: 'Placówka świadomie projektuje środowisko wizualne z dominacją kolorów stonowanych, pastelowych, unikając nadmiaru bodźców wzrokowych, co chroni dzieci przed przebodźcowaniem, sprzyja koncentracji, wyciszeniu oraz tworzy estetyczną, harmonijną przestrzeń sprzyjającą dobremu samopoczuciu',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-prze-12',
                 title: 'Dodatkowe działania - aranżowanie przestrzeni',
-                description: 'Instytucja opieki podejmuje dodatkowe, wspierające estetyczne i funkcjonalne aranżowanie przestrzeni, działania, które przyczyniają się do wszechstronnego rozwoju dzieci',
+                description: 'Placówka podejmuje innowacyjne, wykraczające poza standardy działania w zakresie projektowania środowiska (konsultacje z architektem, pedagogiem Reggio Emilia, wykorzystanie designu uniwersalnego), co świadczy o traktowaniu przestrzeni jako kluczowego czynnika wspierającego rozwój dzieci',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-adapt-1',
                 title: 'Adaptacja nie w tym samym czasie dla wszystkich',
-                description: 'Adaptacja nie odbywa się w tym samym czasie dla wszystkich nowo przybyłych dzieci',
+                description: 'Placówka organizuje proces adaptacji w sposób rozłożony w czasie, unikając sytuacji jednoczesnego rozpoczynania adaptacji przez wszystkie nowe dzieci, co zapewnia personelowi możliwość indywidualnego wsparcia każdego dziecka oraz ogranicza stres związany z równoczesną obecnością wielu płaczących dzieci',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-adapt-2',
                 title: 'Adaptacyjne warsztaty dla rodziców',
-                description: 'Organizowane są adaptacyjne warsztaty dla rodziców',
+                description: 'Placówka organizuje warsztaty przygotowujące rodziców do procesu adaptacji (czego się spodziewać, jak wspierać dziecko, radzenie sobie z własnymi emocjami), co wzmacnia kompetencje rodzicielskie, buduje zaufanie do placówki oraz wspiera rodzinę w tym emocjonalnie wymagającym okresie',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-op-adapt-3',
                 title: 'Dodatkowe działania - proces adaptacji',
-                description: 'Instytucja opieki podejmuje dodatkowe, wspierające proces adaptacji dzieci, działania, które uwzględniają ich indywidualne potrzeby i preferencje, zapewniając komfort i poczucie bezpieczeństwa zarówno dzieciom, jak i ich rodzicom',
+                description: 'Placówka wzbogaca proces adaptacji o dodatkowe, innowacyjne elementy (stopniowane wdrażanie, przedmioty przejściowe, wizyty domowe przed startem, dzienniczek adaptacyjny), co świadczy o głębokim zrozumieniu znaczenia tego okresu oraz dążeniu do maksymalizacji komfortu psychologicznego dziecka i rodziny',
                 type: 'optional',
                 required: false
               }
@@ -1093,84 +1093,84 @@
               {
                 id: 'opt-wr-wsp-1',
                 title: 'Więcej niż jeden kanał informowania rodziców',
-                description: 'W instytucji opieki funkcjonuje więcej niż jeden kanał informowania rodziców o realizacji planu opiekuńczo-wychowawczo-edukacyjnego',
+                description: 'Placówka wykorzystuje zróżnicowane kanały informowania rodziców o realizacji planu (więcej niż jeden), co zwiększa dostępność informacji, uwzględnia różne preferencje komunikacyjne rodzin oraz buduje transparentność i zaangażowanie rodziców w edukację dzieci',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-wr-wsp-2',
                 title: 'Indywidualne rozmowy minimum raz w roku',
-                description: 'Przynajmniej raz w roku odbywają się zaplanowane indywidualne rozmowy z rodzicami o rozwoju ich dziecka',
+                description: 'Placówka zapewnia minimum jedno indywidualne spotkanie rocznie z każdym rodzicem, dedykowane pogłębionej rozmowie o rozwoju ich dziecka, co umożliwia wymianę spostrzeżeń, budowanie wzajemnego zaufania oraz współtworzenie indywidualnej ścieżki wsparcia rozwoju dziecka',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-wr-wsp-3',
                 title: 'Spotkania grupowe częściej niż raz w roku',
-                description: 'Personel organizuje spotkania grupowe z rodzicami częściej niż raz do roku',
+                description: 'Placówka organizuje spotkania grupowe z rodzicami częściej niż raz w roku, co wzmacnia poczucie wspólnoty wychowawczej, umożliwia systematyczną wymianę informacji oraz buduje kulturę dialogu i partnerstwa między placówką a rodzinami',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-wr-wsp-4',
                 title: 'Dodatkowe działania - współpraca z rodzicami',
-                description: 'Instytucja opieki podejmuje dodatkowe, wspierające współpracę personelu i rodziców, działania, które przyczyniają się do kształtowania spójnego środowiska rozwoju dzieci',
+                description: 'Placówka podejmuje innowacyjne, ponadstandardowe działania wspierające współpracę z rodzicami (warsztaty rodzinne, konsultacje ze specjalistami, wspólne projekty), co świadczy o traktowaniu partnerstwa z rodziną jako strategicznego priorytetu oraz dążeniu do tworzenia spójnej wspólnoty wychowawczej',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-wr-wlacz-1',
                 title: 'Zapisy umożliwiające włączanie w codzienne zajęcia',
-                description: 'W zasadach współpracy z rodzicami są zapisy umożliwiające rodzicom włączanie się w codzienne zajęcia z dziećmi',
+                description: 'Placówka posiada regulacje zapraszające rodziców do uczestnictwa w codziennych zajęciach z dziećmi (czytanie książek, warsztaty, spacery), co otwiera „okno" na życie placówki, wzbogaca doświadczenia dzieci oraz buduje autentyczne partnerstwo poprzez wspólne działanie',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-wr-wlacz-2',
                 title: 'Regulacje dotyczące wolontariatu rodziców',
-                description: 'Instytucja opieki ma regulacje określające warunki dotyczące wolontariatu rodziców',
+                description: 'Placówka opracowała przejrzyste regulacje wolontariatu rodzicielskiego, umożliwiające rodzicom systematyczne wsparcie placówki swoimi talentami i zainteresowaniami, co wzbogaca ofertę dla dzieci, buduje poczucie współwłasności placówki oraz wykorzystuje potencjał rodzin',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-wr-wlacz-3',
                 title: 'Warunki umożliwiające rodzicom wspólne spotkania',
-                description: 'Instytucja opieki tworzy warunki umożliwiające rodzicom wspólne spotkania w swoim gronie',
+                description: 'Placówka stwarza warunki (przestrzeń, czas) umożliwiające rodzicom spotykanie się we własnym gronie, co sprzyja budowaniu nieformalnych relacji między rodzinami, tworzeniu sieci wzajemnego wsparcia oraz kształtowaniu społeczności placówki wykraczającej poza relację rodzic-pedagog',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-wr-wlacz-4',
                 title: 'Dodatkowe działania - zaangażowanie rodziców',
-                description: 'Instytucja opieki podejmuje dodatkowe, wspierające aktywne zaangażowanie rodziców w życie instytucji opieki, działania, które przyczyniają się do budowania silnej społeczności i wspierają rozwój dzieci',
+                description: 'Placówka wdraża innowacyjne formy aktywnego zaangażowania rodziców (rada rodziców z realnymi kompetencjami, komitety tematyczne, współdecydowanie), co realizuje najwyższe standardy demokratycznej partycypacji rodzin oraz współtworzenia placówki przez społeczność rodzicielską',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-wr-komp-1',
                 title: 'Warsztaty dla rodziców',
-                description: 'Instytucja opieki organizuje warsztaty dla rodziców, podczas których mają możliwość doskonalenia kompetencji rodzicielskich',
+                description: 'Placówka organizuje warsztaty umożliwiające rodzicom doskonalenie kompetencji rodzicielskich (komunikacja z dzieckiem, radzenie sobie z emocjami, rozwój małego dziecka), co wspiera świadome rodzicielstwo, buduje wspólnotę uczącą się oraz tworzy przestrzeń do wymiany doświadczeń między rodzicami',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-wr-komp-2',
                 title: 'Aktywności do wykonania wspólnie poza instytucją',
-                description: 'Instytucja opieki proponuje rodzicom aktywności, które mogą wykonać wspólnie z dzieckiem poza instytucją opieki',
+                description: 'Placówka proponuje rodzicom inspiracje do aktywności rodzinnych poza placówką (zabawy, książki, eksperymenty, wycieczki), co wzbogaca wspólny czas rodziny, wzmacnia więź rodzic-dziecko oraz tworzy spójność między edukacją w placówce a doświadczeniami domowymi',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-wr-komp-3',
                 title: 'Informacje o warsztatach poza instytucją',
-                description: 'Instytucja opieki informuje rodziców o warsztatach i spotkaniach dotyczących rozwoju i wychowania dzieci organizowanych poza instytucją opieki',
+                description: 'Placówka systematycznie informuje rodziców o wartościowych wydarzeniach edukacyjnych organizowanych poza placówką (wykłady, konferencje, warsztaty), pełniąc rolę „kuratora" informacji wspierających rozwój kompetencji rodzicielskich i budując kulturę uczenia się przez całe życie',
                 type: 'optional',
                 required: false
               },
               {
                 id: 'opt-wr-komp-4',
                 title: 'Dodatkowe działania - kompetencje rodzicielskie',
-                description: 'Instytucja opieki podejmuje dodatkowe działania wspierające rodziców w rozwijaniu ich umiejętności wychowawczych i wzmocnieniu relacji z dziećmi',
+                description: 'Placówka wykracza poza standardy, tworząc kompleksowy system wsparcia kompetencji rodzicielskich (biblioteczka pedagogiczna, konsultacje ze specjalistami, cykliczne warsztaty, grupy wsparcia), co pozycjonuje placówkę jako centrum wspierania rodziny w świadomym, refleksyjnym rodzicielstwie opartym na wiedzy i empatii',
                 type: 'optional',
                 required: false
               }
