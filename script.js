@@ -24553,26 +24553,6 @@ PRZYKŁAD: "Wspieramy kompetencje rodzicielskie przez: (1) biblioteczkę z ksią
       `;
     }
 
-    // Show tab
-    function showTab(tabName) {
-      // Hide all tabs
-      document.querySelectorAll('.tab-content').forEach(tab => {
-        tab.classList.remove('active');
-      });
-      document.querySelectorAll('.tab').forEach(tab => {
-        tab.classList.remove('active');
-      });
-
-      // Show selected tab
-      document.getElementById(`tab-${tabName}`).classList.add('active');
-      event.target.classList.add('active');
-
-      // Update progress if showing progress tab
-      if (tabName === 'postep') {
-        updateProgress();
-      }
-    }
-
     // Save data
     function saveData() {
       const data = {
